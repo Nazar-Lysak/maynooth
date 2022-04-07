@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: whitesmoke;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+ul,
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+ul  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 5px;
+}
+
+h2 {
+    border-bottom: solid 1px gray;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.block-one,
+.block-two,
+.block-three,
+.block-four {
+    border-bottom: solid 1px gray;
+}
+
+.block-one__html-fonts {
+    font-family: 'Rock 3D', cursive;
+}
+
+.block-one__html-fonts-second {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.block-two__html-fonts {
+    font-family: 'Inspiration', cursive;
+}
+
+.block-four-fonts {
+    font-size: calc(1.5rem + 12 * ((100vw - 20rem) / (1024 - 320)));
+}
