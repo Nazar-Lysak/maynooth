@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="position.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="center-outer">
+        <div class="center-inner">
+
+            <div class="bubbles">
+                <h1>Sponge Bob Square Pants</h1>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_item one">
+            <img src="https://th.bing.com/th/id/R.8c209c0bd43c94aafe29e20e84ce88b8?rik=BGifmgpams6%2bGA&riu=http%3a%2f%2fwww.sbmania.net%2fpictures%2f_thumb%2f142a%2f348.jpg&ehk=sjR1s7xpirJHzi2xQj1t2DpDCE5Ikgo1Asv8%2faW%2fcNY%3d&risl=&pid=ImgRaw&r=0"
+                alt="">
+        </div>
+        <div class="container_item two">
+            <img src="https://th.bing.com/th/id/OIP.WOki_Ng83gsk1xioaX3BPgHaG8?pid=ImgDet&rs=1" alt="">
+        </div>
+        <div class="container_item three">
+            <img src="https://th.bing.com/th/id/OIP.lMKcYiWj_6IX8wyNqysUgAHaFr?pid=ImgDet&w=480&h=368&rs=1" alt="">
+        </div>
+        <div class="container_item four">
+            <img src="https://i.pinimg.com/736x/6b/ac/c8/6bacc831bb1d6d0c61838f0d3b62ca96.jpg" alt="">
+        </div>
+        <div class="container_item five">
+            <img src="https://th.bing.com/th/id/R.d44ac3b3c5cb301ef4fde3b4e915f7ef?rik=eK%2bdC%2fTDR3Wuwg&riu=http%3a%2f%2fmedia.sbmania.net%2fpictures%2f10a%2f30.png&ehk=zuhtOuIDFJaisXz2j70JDnhINlZ56Om8WJXRdX%2f3Rdo%3d&risl=&pid=ImgRaw&r=0"
+                alt="">
+        </div>
+        <div class="container_item six">
+            <img src="https://th.bing.com/th/id/R.f52f1472a30ac8537edd5bcfe92b4db3?rik=NoRb6F16fcWPRQ&riu=http%3a%2f%2fimg3.wikia.nocookie.net%2f__cb20131107022604%2fp__%2fprotagonist%2fimages%2fthumb%2fe%2fe5%2fSpongebob-142b-legends-of-bikini-bottom-full-episode-1-.jpg%2f500px-Spongebob-142b-legends-of-bikini-bottom-full-episode-1-.jpg&ehk=0XDusFWXhJxgSlpXrHxcrV1epbyOfAUFFxMJcSz862Q%3d&risl=&pid=ImgRaw&r=0"
+                alt="">
+        </div>
+        <div class="container_item seven">
+            <img src="https://th.bing.com/th/id/OIP.OLfRHJtxb4JNJdJ2icNjfQAAAA?pid=ImgDet&w=464&h=352&rs=1" alt="">
+        </div>
+    </div>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            const bArray = [];
+            const sArray = [6, 10, 14, 18];
+
+            for (let i = 0; i < $('.bubbles').width(); i++) {
+                bArray.push(i);
+            }
+
+            function randomValue(arr) {
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+
+            setInterval(function () {
+
+                let size = randomValue(sArray);
+
+                $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+
+                $('.individual-bubble').animate({
+                    'bottom': '100%',
+                    'opacity': '-=0.7'
+                }, 3000, function () {
+                    $(this).remove()
+                });
+            }, 350);
+        });
+    </script>
+</body>
+</html>
