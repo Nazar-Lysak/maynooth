@@ -1,43 +1,10 @@
-@import '_footer';
+@import './additional_styles/reset.scss';
+@import './additional_styles/varibles';
+@import './additional_styles/mixin';
 
-// *** Zero *** //
-*{
-  padding: 0;
-  margin: 0;
-  border: 0;
-  user-select: none;
-}
-*,*:before,*:after{
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
+@import './blocks/footer';
 
-nav,footer,header,aside{display: block;}
-
-html,body{
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  touch-action: pan-x pan-y;
-}
-input,button,textarea{font-family:inherit;}
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+@import './additional_styles/UI/links/footer';
 
 * {
   font-family: 'Roboto', sans-serif;
