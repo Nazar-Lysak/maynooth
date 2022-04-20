@@ -2,10 +2,23 @@
 @import './additional_styles/varibles';
 @import './additional_styles/mixin';
 
+
 @import './blocks/footer';
 
 @import './additional_styles/UI/links/footer';
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("../src/fonts/Roboto-Bold.woff2") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../src/fonts/Roboto-BoldItalic.woff2") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -19,3 +32,4 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
