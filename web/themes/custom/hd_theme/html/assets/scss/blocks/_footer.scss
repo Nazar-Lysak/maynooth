@@ -43,10 +43,11 @@ footer {
         }
         .menu-item a {
           font-size: 23px;
+          width: 40px;
           margin: 12.5px;
           border-radius: 50%;
           background-color: $white;
-          color: #000;
+          color: $dark;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -55,9 +56,27 @@ footer {
 
           &:hover {
             color: $white;
-            background-color: #000;
+            background-color: $dark;
             transition: all ease .5s;
           }
+        }
+
+        .icon-instagram:hover {
+          transition: all .5s ease-in-out;
+          @include instagram;
+        }
+        .icon-facebook:hover {
+          transition: all .5s ease-in-out;
+          @include facebook;
+        }
+
+        .icon-tiktok:hover {
+          transition: all .5s ease-in-out;
+          @include tik-tok;
+        }
+        .icon-twitter:hover {
+          transition: all .5s ease-in-out;
+          @include twitter;
         }
       }
     }
@@ -81,7 +100,7 @@ footer {
         transition: all ease .3s;
 
         &:hover {
-          color: $blue;
+          color: $orange;
         }
       }
     }
