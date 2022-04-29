@@ -28,8 +28,10 @@
                 font-size: 48px;
                 line-height: 56px;
                 height: 50%;
+                margin: 5px;
                 display: flex;
                 align-items: flex-end;
+                text-align: center;
                 text-transform: uppercase;
                 color: $dark;
             }
@@ -37,6 +39,7 @@
             .wrapper_text__description {
                 text-align: center;
                 height: 50%;
+                margin: 5px;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 48px;
