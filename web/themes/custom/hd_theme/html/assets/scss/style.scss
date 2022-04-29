@@ -15,12 +15,14 @@
 
 @import './paragraphs/main-banner';
 @import './paragraphs/four-goods-items';
+@import './paragraphs/promo';
 
 /* UI */
 
 @import './additional_styles/UI/links/links-header-nav';
 @import './additional_styles/UI/links/links-footer-nav';
 @import './additional_styles/UI/buttons/button-primary';
+@import './additional_styles/UI/links/links-for-goods-comp';
 
 @font-face {
   font-family: 'Roboto';
@@ -46,3 +48,6 @@
   margin: 0 auto;
 }
 
+.field__item {
+  width: 100%;
+}
