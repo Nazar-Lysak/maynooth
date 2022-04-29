@@ -1,0 +1,37 @@
+.field--name-field-main-baner {
+    padding-top: 50px;
+    width: 100%;
+    background-color: $gray;
+    margin-bottom: 50px;
+
+    .field__item {
+        max-width: 1280px;
+        margin: 0 auto;
+
+        p {
+            max-width: 506px;
+            padding: 32px 0 24px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .field--name-field-main-link-button {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 50px;
+
+            a {
+                width: 100%;
+            }
+
+        }
+
+        .field--name-field-main-image {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    <h2>
+        {{ content.field_main_title[0] }}
+    </h2>
+    <p>
+        {{ content.field_main_description_text[0] }}
+    </p>
+    {{ content.field_main_link_button }}
+    {{ content.field_main_image }}
+  </div>
+{% endblock paragraph %}
+
+
+
+
+
+
