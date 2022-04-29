@@ -1,0 +1,21 @@
+uuid: 351efe92-2792-4cbf-8078-c9e5e52f2874
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_description_text
+    - paragraphs.paragraphs_type.main_banner
+  module:
+    - text
+id: paragraph.main_banner.field_main_description_text
+field_name: field_main_description_text
+entity_type: paragraph
+bundle: main_banner
+label: 'Main description text'
+description: 'Main description text'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

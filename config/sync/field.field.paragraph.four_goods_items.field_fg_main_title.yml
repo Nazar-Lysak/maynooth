@@ -1,0 +1,19 @@
+uuid: d22aabe4-9ab7-46d3-bb69-9ca6cb0b1343
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fg_main_title
+    - paragraphs.paragraphs_type.four_goods_items
+id: paragraph.four_goods_items.field_fg_main_title
+field_name: field_fg_main_title
+entity_type: paragraph
+bundle: four_goods_items
+label: 'Main Title (4 gods component)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

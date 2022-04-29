@@ -1,0 +1,44 @@
+uuid: 95765ece-cc76-4735-a5a9-865e277f6833
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.component_page
+    - paragraphs.paragraphs_type.four_goods_items
+    - paragraphs.paragraphs_type.main_banner
+    - paragraphs.paragraphs_type.promo
+  module:
+    - entity_reference_revisions
+id: node.component_page.field_components
+field_name: field_components
+entity_type: node
+bundle: component_page
+label: components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      four_goods_items: four_goods_items
+      main_banner: main_banner
+      promo: promo
+    negate: 0
+    target_bundles_drag_drop:
+      four_goods_items:
+        weight: 4
+        enabled: true
+      main_banner:
+        weight: 5
+        enabled: true
+      product_tabs:
+        weight: 6
+        enabled: false
+      promo:
+        weight: 8
+        enabled: true
+field_type: entity_reference_revisions
