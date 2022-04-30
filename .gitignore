@@ -5,11 +5,8 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
-<<<<<<< HEAD
 /web/libraries/
 /node_modules/
-=======
->>>>>>> 8d12fadaca5c28897481d79cbe66456a1fca7548
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
