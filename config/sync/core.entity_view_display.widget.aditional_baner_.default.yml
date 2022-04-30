@@ -1,0 +1,36 @@
+uuid: 27b59b0b-54d9-4083-a171-46528526530e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.widget.aditional_baner_.field_image
+    - field.field.widget.aditional_baner_.field_text
+    - widget_engine.widget_type.aditional_baner_
+  module:
+    - image
+id: widget.aditional_baner_.default
+targetEntityType: widget
+bundle: aditional_baner_
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  name: true
+  user_id: true
+  widget_preview: true

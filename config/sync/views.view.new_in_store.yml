@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.commerce_product.body
     - field.storage.commerce_product.field_img_to_card
-    - image.style.medium
+    - image.style.new_in_store_img_style
   module:
     - commerce_product
     - image
@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'New in Store'
+      title: 'Looking for What’s New in Store?'
       fields:
         field_img_to_card:
           id: field_img_to_card
@@ -79,7 +79,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: medium
+            image_style: new_in_store_img_style
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -204,8 +204,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: text_trimmed
+          settings:
+            trim_length: 120
           group_column: value
           group_columns: {  }
           group_rows: true

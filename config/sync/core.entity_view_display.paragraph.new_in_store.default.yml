@@ -1,0 +1,22 @@
+uuid: 23d52881-dfc8-4eaf-8707-4e832033aec4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.new_in_store.field_new_in_store
+    - paragraphs.paragraphs_type.new_in_store
+  module:
+    - block_field
+id: paragraph.new_in_store.default
+targetEntityType: paragraph
+bundle: new_in_store
+mode: default
+content:
+  field_new_in_store:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

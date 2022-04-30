@@ -1,0 +1,14 @@
+uuid: 619b0b34-00af-4a8f-9cad-2cc0d5b2dd22
+langcode: en
+status: true
+dependencies: {  }
+name: new_in_store_img_style
+label: 'New in store (Img style)'
+effects:
+  530a8a53-0283-458f-aaba-f98ec5871abf:
+    uuid: 530a8a53-0283-458f-aaba-f98ec5871abf
+    id: image_resize
+    weight: 1
+    data:
+      width: 400
+      height: 442

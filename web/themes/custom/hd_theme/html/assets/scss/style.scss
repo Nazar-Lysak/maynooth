@@ -17,12 +17,19 @@
 @import './paragraphs/four-goods-items';
 @import './paragraphs/promo';
 
+/* Views */
+
+@import './views/new-in-store';
+
 /* UI */
 
 @import './additional_styles/UI/links/links-header-nav';
 @import './additional_styles/UI/links/links-footer-nav';
 @import './additional_styles/UI/buttons/button-primary';
 @import './additional_styles/UI/links/links-for-goods-comp';
+@import './additional_styles/UI/links/links_new-in-store-views';
+
+/* ========================= */
 
 @font-face {
   font-family: 'Roboto';

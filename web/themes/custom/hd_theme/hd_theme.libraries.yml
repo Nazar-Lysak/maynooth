@@ -38,4 +38,4 @@ login-page:
     base:
       html/src/css/login.css: {}
   js:
-    html/src/js/login.js: { }
+    html/src/js/login.js: {}

@@ -7,6 +7,7 @@ dependencies:
     - node.type.component_page
     - paragraphs.paragraphs_type.four_goods_items
     - paragraphs.paragraphs_type.main_banner
+    - paragraphs.paragraphs_type.new_in_store
     - paragraphs.paragraphs_type.promo
   module:
     - entity_reference_revisions
@@ -27,13 +28,20 @@ settings:
       four_goods_items: four_goods_items
       main_banner: main_banner
       promo: promo
+      new_in_store: new_in_store
     negate: 0
     target_bundles_drag_drop:
       four_goods_items:
         weight: 4
         enabled: true
+      inspiration:
+        weight: 8
+        enabled: false
       main_banner:
         weight: 5
+        enabled: true
+      new_in_store:
+        weight: 10
         enabled: true
       product_tabs:
         weight: 6
