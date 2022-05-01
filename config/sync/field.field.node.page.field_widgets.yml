@@ -7,10 +7,12 @@ dependencies:
     - node.type.page
     - widget_engine.widget_type.aditional_baner_
     - widget_engine.widget_type.block
+    - widget_engine.widget_type.features_component
     - widget_engine.widget_type.image_banner
     - widget_engine.widget_type.inspiration
     - widget_engine.widget_type.offer
     - widget_engine.widget_type.sale
+    - widget_engine.widget_type.six_goods_items
 id: node.page.field_widgets
 field_name: field_widgets
 entity_type: node
@@ -27,10 +29,12 @@ settings:
     target_bundles:
       aditional_baner_: aditional_baner_
       block: block
+      features_component: features_component
       image_banner: image_banner
       inspiration: inspiration
       offer: offer
       sale: sale
+      six_goods_items: six_goods_items
     sort:
       field: _none
       direction: ASC

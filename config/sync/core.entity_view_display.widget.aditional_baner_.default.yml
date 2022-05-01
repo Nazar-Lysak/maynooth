@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.widget.aditional_baner_.field_additional_banner_title
     - field.field.widget.aditional_baner_.field_image
     - field.field.widget.aditional_baner_.field_text
     - widget_engine.widget_type.aditional_baner_
@@ -13,6 +14,14 @@ targetEntityType: widget
 bundle: aditional_baner_
 mode: default
 content:
+  field_additional_banner_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_image:
     type: image
     label: hidden

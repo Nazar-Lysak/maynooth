@@ -1,0 +1,64 @@
+.widget-features-component {
+    background-color: $gray;
+    padding: 0 20px;
+
+    h2 {
+        text-align: left;
+        padding: 32px 0 42px;
+    }
+
+    .wrapper {
+        max-width: $breakpoint-max;
+        margin: 0 auto;
+
+        .wrapper-content {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 42px;
+
+            .wrapper-image {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .wrapper-description {
+                max-width: 535px;
+                margin-left: 40px;
+                padding-top: 20px;
+
+                h4 {
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-bottom: 42px;
+                }
+
+                .field--name-field-text {
+                    margin-bottom: 48px;
+                }
+                ul {
+                    margin-bottom: 50px;
+                    li {
+                        list-style: disc;
+                        margin: 0 0 24px 20px;
+
+                        &:before {
+                            content: "";
+                            border: 5px #000 solid !important;
+                            border-radius: 50px;
+                            margin-top: 2px;
+                            margin-left: -20px;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+uuid: 096f35de-e222-4515-8083-d20f44ca47d4
+langcode: en
+status: true
+dependencies: {  }
+name: 388x238
+label: 388x238
+effects:
+  a02e4e19-2247-4b3e-b23a-a61806ec469f:
+    uuid: a02e4e19-2247-4b3e-b23a-a61806ec469f
+    id: image_resize
+    weight: 1
+    data:
+      width: 388
+      height: 238

@@ -1,0 +1,23 @@
+uuid: e927b2e6-acaf-42a4-8f29-d13b067528b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.widget.field_link_6
+    - widget_engine.widget_type.six_goods_items
+  module:
+    - link
+id: widget.six_goods_items.field_link_6
+field_name: field_link_6
+entity_type: widget
+bundle: six_goods_items
+label: 'Link 6'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

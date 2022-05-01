@@ -1,0 +1,19 @@
+uuid: a59e5940-3e96-4946-b7de-5c2a1c7b0111
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.widget.field_additional_banner_title
+    - widget_engine.widget_type.aditional_baner_
+id: widget.aditional_baner_.field_additional_banner_title
+field_name: field_additional_banner_title
+entity_type: widget
+bundle: aditional_baner_
+label: 'Additional banner Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

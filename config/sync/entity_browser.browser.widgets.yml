@@ -81,3 +81,33 @@ widgets:
       entity_type: widget
       bundle: block
       form_mode: default
+  92f48a88-3529-409e-adde-21c758954d4d:
+    id: entity_form
+    uuid: 92f48a88-3529-409e-adde-21c758954d4d
+    label: 'Additional banner'
+    weight: 7
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: aditional_baner_
+      form_mode: default
+  d6070ed0-3fe1-4e06-b3db-3972cc105589:
+    id: entity_form
+    uuid: d6070ed0-3fe1-4e06-b3db-3972cc105589
+    label: 'Six goods items'
+    weight: 8
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: six_goods_items
+      form_mode: default
+  1a906d7c-d067-4cf4-930a-a69e1f34bfa4:
+    id: entity_form
+    uuid: 1a906d7c-d067-4cf4-930a-a69e1f34bfa4
+    label: 'Features block'
+    weight: 9
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: features_component
+      form_mode: default
