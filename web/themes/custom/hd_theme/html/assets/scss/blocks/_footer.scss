@@ -121,3 +121,24 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: $breakpoint-md) {
+  footer {
+    .footer {
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px 60px 110px 100px;
+      grid-template-areas: "branding branding"
+                           "menu-left menu-right"
+                           "menu-social menu-social"
+                           "privacy privacy";
+
+      .navigation {
+        .menu {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
