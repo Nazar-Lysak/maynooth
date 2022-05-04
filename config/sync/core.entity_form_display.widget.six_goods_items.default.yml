@@ -1,0 +1,188 @@
+uuid: ed0f935e-695f-4e08-8a86-587cd497017b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.widget.six_goods_items.field_image_1
+    - field.field.widget.six_goods_items.field_image_2
+    - field.field.widget.six_goods_items.field_image_3
+    - field.field.widget.six_goods_items.field_image_4
+    - field.field.widget.six_goods_items.field_image_5
+    - field.field.widget.six_goods_items.field_image_6
+    - field.field.widget.six_goods_items.field_link_1
+    - field.field.widget.six_goods_items.field_link_2
+    - field.field.widget.six_goods_items.field_link_3
+    - field.field.widget.six_goods_items.field_link_4
+    - field.field.widget.six_goods_items.field_link_5
+    - field.field.widget.six_goods_items.field_link_6
+    - field.field.widget.six_goods_items.field_title_1
+    - field.field.widget.six_goods_items.field_title_2
+    - field.field.widget.six_goods_items.field_title_3
+    - field.field.widget.six_goods_items.field_title_4
+    - field.field.widget.six_goods_items.field_title_5
+    - field.field.widget.six_goods_items.field_title_6
+    - image.style.thumbnail
+    - widget_engine.widget_type.six_goods_items
+  module:
+    - image
+    - link
+id: widget.six_goods_items.default
+targetEntityType: widget
+bundle: six_goods_items
+mode: default
+content:
+  field_image_1:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_image_2:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_image_3:
+    type: image_image
+    weight: 7
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_image_4:
+    type: image_image
+    weight: 10
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_image_5:
+    type: image_image
+    weight: 13
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_image_6:
+    type: image_image
+    weight: 16
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link_1:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_link_2:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_link_3:
+    type: link_default
+    weight: 9
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_link_4:
+    type: link_default
+    weight: 12
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_link_5:
+    type: link_default
+    weight: 15
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_link_6:
+    type: link_default
+    weight: 18
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title_1:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_2:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_3:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_4:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_5:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_6:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true
+  widget_preview: true

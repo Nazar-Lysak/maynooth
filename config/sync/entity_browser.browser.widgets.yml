@@ -1,0 +1,113 @@
+uuid: 427cd37a-5724-4098-9899-0e707cb62750
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.widgets_entity_browser
+  module:
+    - entity_browser_entity_form
+    - views
+    - widget_engine_entity_form
+name: widgets
+label: Widgets
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: select_add_tabs
+widget_selector_configuration: {  }
+widgets:
+  90bfaa16-da03-479a-bf68-18cda7d70cbd:
+    id: view
+    uuid: 90bfaa16-da03-479a-bf68-18cda7d70cbd
+    label: view
+    weight: 1
+    settings:
+      submit_text: 'Select entities'
+      auto_select: false
+      view: widgets_entity_browser
+      view_display: entity_browser_1
+  3674a5be-26e2-4c57-b83c-37a83c4fa794:
+    id: entity_form
+    uuid: 3674a5be-26e2-4c57-b83c-37a83c4fa794
+    label: Banner
+    weight: 2
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: image_banner
+      form_mode: default
+  f96cf3c0-e8e5-49b4-b289-84d9d95968d4:
+    id: entity_form
+    uuid: f96cf3c0-e8e5-49b4-b289-84d9d95968d4
+    label: Offer
+    weight: 3
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: offer
+      form_mode: default
+  ef7f7c09-1251-47f1-bf01-e7816fc8a500:
+    id: entity_form
+    uuid: ef7f7c09-1251-47f1-bf01-e7816fc8a500
+    label: Sale
+    weight: 4
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: sale
+      form_mode: default
+  aa2bc16b-375f-4fbc-855a-af12282af6e4:
+    id: entity_form
+    uuid: aa2bc16b-375f-4fbc-855a-af12282af6e4
+    label: Inspiration
+    weight: 5
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: inspiration
+      form_mode: default
+  b6db51ab-495f-41ad-8e8f-0e07e861ed64:
+    id: entity_form
+    uuid: b6db51ab-495f-41ad-8e8f-0e07e861ed64
+    label: block
+    weight: 6
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: block
+      form_mode: default
+  92f48a88-3529-409e-adde-21c758954d4d:
+    id: entity_form
+    uuid: 92f48a88-3529-409e-adde-21c758954d4d
+    label: 'Additional banner'
+    weight: 7
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: aditional_baner_
+      form_mode: default
+  d6070ed0-3fe1-4e06-b3db-3972cc105589:
+    id: entity_form
+    uuid: d6070ed0-3fe1-4e06-b3db-3972cc105589
+    label: 'Six goods items'
+    weight: 8
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: six_goods_items
+      form_mode: default
+  1a906d7c-d067-4cf4-930a-a69e1f34bfa4:
+    id: entity_form
+    uuid: 1a906d7c-d067-4cf4-930a-a69e1f34bfa4
+    label: 'Features block'
+    weight: 9
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: features_component
+      form_mode: default

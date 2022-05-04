@@ -1,0 +1,38 @@
+uuid: 2a1410d4-c9e3-4361-acca-c8191ab3bb36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.widget.field_image_2
+    - widget_engine.widget_type.six_goods_items
+  module:
+    - image
+id: widget.six_goods_items.field_image_2
+field_name: field_image_2
+entity_type: widget
+bundle: six_goods_items
+label: 'Image 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

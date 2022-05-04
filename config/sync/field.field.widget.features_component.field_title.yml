@@ -1,0 +1,19 @@
+uuid: f5af477e-13c0-41c7-9878-5f938c1643b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.widget.field_title
+    - widget_engine.widget_type.features_component
+id: widget.features_component.field_title
+field_name: field_title
+entity_type: widget
+bundle: features_component
+label: title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

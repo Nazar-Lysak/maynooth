@@ -1,0 +1,43 @@
+.wraper-item {
+    position: relative;
+    transition: .3s;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-15px);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 560px;
+        height: 30px;
+        transform: rotate(-40deg) translateY(-100px);
+        background: linear-gradient(to right, $gold, $white);
+        backdrop-filter: blur(3px);
+        opacity: .6;
+    }
+
+    &:hover::after {
+        animation: border-effect 1.2s ease;
+    }
+}
+
+@keyframes border-effect {
+    0% {
+        transform: rotate(-40deg) translateY(-100px);
+    }
+    100% {
+        transform: rotate(-40deg) translateY(530px);
+    }
+}
+
+
+
+
+
+
+

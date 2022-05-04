@@ -1,0 +1,27 @@
+uuid: 2d2a4f0a-a36e-4110-9d40-21cc067ca624
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_new_in_store
+    - paragraphs.paragraphs_type.new_in_store
+  module:
+    - block_field
+id: paragraph.new_in_store.field_new_in_store
+field_name: field_new_in_store
+entity_type: paragraph
+bundle: new_in_store
+label: 'New in store'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    plugin_id: 'entity_view:commerce_product'
+    settings: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field

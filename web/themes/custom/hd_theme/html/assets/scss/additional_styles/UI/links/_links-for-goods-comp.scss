@@ -1,0 +1,28 @@
+.four-goods-wrapper {
+
+    a {
+        color: $dark;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-decoration: none;
+
+
+        background:
+            linear-gradient(to right,
+                rgba(0, 0, 0, 1),
+                rgba(0, 0, 0, 1)),
+            linear-gradient(to right,
+                rgba(243, 154, 81, 1),
+                rgba(23, 162, 184, 1),
+                rgba(132, 44, 104, 1));
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+
+        &:hover {
+            background-size: 0 3px, 100% 3px;
+        }
+    }
+}

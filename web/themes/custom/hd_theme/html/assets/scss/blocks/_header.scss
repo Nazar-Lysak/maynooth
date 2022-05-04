@@ -2,7 +2,7 @@ header{
     background: $dark;
     width: 100%;
 
-    .header{
+    .region-header{
       margin: 0 auto;
       padding: 0 15px;
       height: 64px;
@@ -13,7 +13,7 @@ header{
       align-items: center;
 
       .main-menu{
-        width: 100%;
+        max-width: 850px;
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
@@ -51,6 +51,7 @@ header{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        text-align: end;
         i{
         font-size: 25px;
         color: $white;

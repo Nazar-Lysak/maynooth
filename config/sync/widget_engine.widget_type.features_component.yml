@@ -1,0 +1,6 @@
+uuid: c7f3b002-3353-4e20-9c72-c9ec9f08f2fa
+langcode: en
+status: true
+dependencies: {  }
+id: features_component
+label: 'Features component'

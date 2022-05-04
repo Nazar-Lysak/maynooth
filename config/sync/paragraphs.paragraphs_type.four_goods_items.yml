@@ -1,0 +1,10 @@
+uuid: 8206f664-f653-48a3-9a00-3e3a64b1ce07
+langcode: en
+status: true
+dependencies: {  }
+id: four_goods_items
+label: 'Four goods items'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: 3f8be802-f254-4ff1-907c-c8eae00ffa56
+langcode: en
+status: true
+dependencies: {  }
+id: promo
+label: Promo
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

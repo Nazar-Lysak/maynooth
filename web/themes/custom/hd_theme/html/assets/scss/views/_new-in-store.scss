@@ -1,0 +1,54 @@
+
+
+.field--name-field-new-in-store {
+    padding: 0 20px;
+    margin-bottom: 100px;
+
+    .views-element-container{
+        h2 {
+            margin-bottom: 52px;
+        }
+    }
+
+    .views-row {
+        max-width: 400px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .view-content {
+        margin: 0 auto;
+        max-width: $breakpoint-max;
+        display: grid;
+        grid-template-columns: minmax(250px,400px) minmax(250px,400px) minmax(250px,400px);
+        justify-items: center;
+        gap: 26.6px;
+
+        .views-field-title {
+            margin: 24px 0;
+            .field-content {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 33px;
+                text-transform: capitalize;
+            }
+        }
+
+        .field-content {
+            margin-bottom: 30px;
+            p {
+                height: 80px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

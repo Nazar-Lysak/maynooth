@@ -1,30 +1,57 @@
 
+/* additional_styles */
+
 @import './additional_styles/reset.scss';
 @import './additional_styles/varibles';
 @import './additional_styles/mixin';
+@import './fonts-styles';
 
+/* Blocks */
 
 @import './blocks/footer';
 @import './blocks/header';
 
+/* widgets */
+
+@import './widgets/widget-additional-banner';
+@import './widgets/widget-six-goods-items';
+@import './widgets/widget-features-component';
+
+/* paragraphs */
+
+@import './paragraphs/main-banner';
+@import './paragraphs/four-goods-items';
+@import './paragraphs/promo';
+
+/* Views */
+
+@import './views/new-in-store';
+
+/* UI */
+
 @import './additional_styles/UI/links/links-header-nav';
 @import './additional_styles/UI/links/links-footer-nav';
+@import './additional_styles/UI/buttons/button-primary';
+@import './additional_styles/UI/buttons/button-widget-features-comp';
+@import './additional_styles/UI/links/links-for-goods-comp';
+@import './additional_styles/UI/links/links_new-in-store-views';
+@import './additional_styles/UI/cards/six-goods-animation';
+
+/* ========================= */
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../src/fonts/Roboto-Bold.woff2") format("truetype");
+  src: url("../fonts/Roboto-Bold.woff2") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../src/fonts/Roboto-BoldItalic.woff2") format("truetype");
+  src: url("../fonts/Roboto-BoldItalic.woff2") format("truetype");
   font-style: italic;
   font-weight: bold;
 }
-* {
-  font-family: 'Roboto', sans-serif;
-}
+
 .layout-container {
   display: flex;
   flex-direction: column;
@@ -34,4 +61,8 @@
 .container {
   max-width: $breakpoint-max;
   margin: 0 auto;
+}
+
+.field__item {
+  width: 100%;
 }

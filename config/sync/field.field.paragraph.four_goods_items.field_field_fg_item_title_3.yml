@@ -1,0 +1,19 @@
+uuid: a0b9c646-039f-4af6-97cc-f6459761578a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_field_fg_item_title_3
+    - paragraphs.paragraphs_type.four_goods_items
+id: paragraph.four_goods_items.field_field_fg_item_title_3
+field_name: field_field_fg_item_title_3
+entity_type: paragraph
+bundle: four_goods_items
+label: 'Title 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
