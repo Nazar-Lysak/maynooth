@@ -50,3 +50,25 @@
         }
     }
 }
+
+@media screen and (max-width: $breakpoint-lg){
+    .paragraph--type--promo {
+        .wrapper {
+            flex-direction: column;
+
+            a {
+                width: 100%;
+                background: none;
+            }
+
+            .wrapper_text {
+                width: 100%;
+                padding: 30px 0;
+
+                .wrapper_text__title {
+                    display: block;
+                }
+            }
+        }
+    }
+}
