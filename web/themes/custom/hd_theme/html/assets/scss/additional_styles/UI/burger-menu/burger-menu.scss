@@ -1,29 +1,30 @@
-header {
-    .region-header {
+@media screen and (max-width: $breakpoint-lg) {
+    header {
+        .region-header {
+            .burger-menu {
+                height: 30px;
+                width: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                cursor: pointer;
 
-        .burger-menu {
-            height: 30px;
-            width: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-end;
-            cursor: pointer;
+                .burger-menu__one,
+                .burger-menu__two,
+                .burger-menu__three {
+                    transition: all .3s ease-in-out;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $white;
+                    margin: 2px;
+                }
 
-            .burger-menu__one,
-            .burger-menu__two,
-            .burger-menu__three {
-              transition: all .3s ease-in-out;
-              width: 100%;
-              height: 2px;
-              background-color: $white;
-              margin: 2px;
+                .burger-menu__two {
+                    width: 80%
+                }
             }
-
-            .burger-menu__two {
-              width: 80%
-            }
-          }
-
+        }
     }
 }
+

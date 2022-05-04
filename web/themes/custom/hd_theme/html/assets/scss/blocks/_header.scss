@@ -3,6 +3,10 @@ header {
   background: $dark;
   width: 100%;
 
+  .burger-menu {
+      display: none;
+    }
+
   .region-header {
     margin: 0 auto;
     padding: 0 15px;
