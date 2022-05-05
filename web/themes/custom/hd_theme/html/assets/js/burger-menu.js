@@ -11,7 +11,7 @@
 
         mainMenu.classList.toggle('.burger-menu')
         ? document.querySelector('body').style.overflow = "hidden"
-        : document.querySelector('body').style.overflow = "auto"
+        : document.querySelector('body').style.overflow = "auto";
       })
     }
   };

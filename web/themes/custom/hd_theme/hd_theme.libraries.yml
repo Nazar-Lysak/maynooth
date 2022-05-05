@@ -15,6 +15,7 @@ global-scripts:
   dependencies:
     - core/drupal
     - core/jquery
+    - core/once
 
 # Product Library.
 product-library:

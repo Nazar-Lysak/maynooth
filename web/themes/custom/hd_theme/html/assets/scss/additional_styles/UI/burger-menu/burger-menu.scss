@@ -24,6 +24,46 @@
                     width: 80%
                 }
             }
+
+            .burger-menu.active {
+                margin: 0 auto;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                cursor: pointer;
+
+                .burger-menu__two {
+                  width: 80%;
+                  height: 2px;
+                  background-color: $white;
+                  margin: 2px;
+                }
+
+                .burger-menu__one {
+                  width: 60%;
+                  position: relative;
+                  height: 3px;
+                  bottom: -5px;
+                  left: 5px;
+                  transform: rotate(40deg);
+                }
+
+                .burger-menu__two {
+                  width: 100%;
+                }
+
+                .burger-menu__three {
+                  width: 60%;
+                  position: relative;
+                  bottom: 5px;
+                  height: 3px;
+                  left: 5px;
+                  transform: rotate(-40deg);
+                }
+            }
         }
     }
 }
