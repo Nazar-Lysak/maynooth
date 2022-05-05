@@ -52,3 +52,23 @@
         }
     }
 }
+
+@media screen and (max-width: $breakpoint-lg) {
+    .field--name-field-new-in-store {
+
+        .views-element-container{
+            h2 {
+                font-size: 30px;
+            }
+        }
+        margin-bottom: 30px;
+        .view-content {
+            display: block;
+        }
+
+        .views-row {
+            margin-bottom: 40px;
+            max-width: 100%;
+        }
+    }
+}

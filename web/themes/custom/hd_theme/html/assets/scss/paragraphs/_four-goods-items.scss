@@ -34,3 +34,25 @@
         }
     }
 }
+
+@media screen and (max-width: $breakpoint-md) {
+
+    .four-goods-wrapper {
+        .wrapper {
+
+
+            .four-goods-wrapper_list {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0 20px;
+
+            }
+
+            .four-goods-wrapper__main-title {
+                font-size: 30px;
+            }
+        }
+    }
+
+}
