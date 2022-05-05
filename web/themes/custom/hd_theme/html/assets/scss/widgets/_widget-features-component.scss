@@ -21,6 +21,7 @@
 
                 img {
                     width: 100%;
+                    min-width: 500px;
                     height: auto;
                 }
             }
@@ -28,7 +29,6 @@
             .wrapper-description {
                 max-width: 535px;
                 margin-left: 40px;
-                padding-top: 20px;
 
                 h4 {
                     text-align: left;
@@ -52,10 +52,80 @@
                             content: "";
                             border: 5px #000 solid !important;
                             border-radius: 50px;
-                            margin-top: 2px;
+                            margin-top: 5px;
                             margin-left: -20px;
                             position: absolute;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+    .widget-features-component {
+        .wrapper {
+            h2 {
+                text-align: center;
+            }
+            .wrapper-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-bottom: 42px;
+                .wrapper-image {
+                    width: 100%;
+
+                    img {
+                        min-width: 100px;
+                    }
+                }
+                .wrapper-description  {
+                    padding-top: 30px;
+                    max-width: 100%;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    h4 {
+                        text-align: center;
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 26px;
+                        line-height: 40px;
+                        text-align: center;
+                    }
+                    ul {
+                        li {
+                            &:before {
+                                content: "";
+                                border: 5px #000 solid !important;
+                                border-radius: 50px;
+                                margin-top: 5px;
+                                margin-left: -22px;
+                                position: absolute;
+                            }
+                        }
+                    }
+                    ul > li {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    .widget-features-component {
+        .wrapper {
+            .wrapper-content {
+                .wrapper-description  {
+                    p {
+                        font-size: 22px;
+                        line-height: 40px;
                     }
                 }
             }

@@ -1,5 +1,3 @@
-
-
 .field--name-field-new-in-store {
     padding: 0 20px;
     margin-bottom: 100px;
@@ -20,15 +18,18 @@
     }
 
     .view-content {
+        overflow: auto;
         margin: 0 auto;
         max-width: $breakpoint-max;
         display: grid;
-        grid-template-columns: minmax(250px,400px) minmax(250px,400px) minmax(250px,400px);
+        grid-template-columns: minmax(290px,400px) minmax(290px,400px) minmax(290px,400px);
         justify-items: center;
         gap: 26.6px;
 
         .views-field-title {
-            margin: 24px 0;
+            margin-top: 24px;
+
+
             .field-content {
                 font-family: 'Roboto';
                 font-style: normal;
@@ -36,6 +37,11 @@
                 font-size: 28px;
                 line-height: 33px;
                 text-transform: capitalize;
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 290px;
             }
         }
 
@@ -53,22 +59,8 @@
     }
 }
 
-@media screen and (max-width: $breakpoint-lg) {
+@media screen and (max-width: $breakpoint-sm) {
     .field--name-field-new-in-store {
-
-        .views-element-container{
-            h2 {
-                font-size: 30px;
-            }
-        }
-        margin-bottom: 30px;
-        .view-content {
-            display: block;
-        }
-
-        .views-row {
-            margin-bottom: 40px;
-            max-width: 100%;
-        }
+        margin-bottom: 45px;
     }
 }

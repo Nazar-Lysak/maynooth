@@ -38,8 +38,15 @@
 @media screen and (max-width: $breakpoint-md) {
 
     .four-goods-wrapper {
-        .wrapper {
 
+        .wrapper {
+            .four-goods-wrapper__main-title {
+                margin: 25px 0;
+            }
+
+            h3 {
+                margin: 18px 0;
+            }
 
             .four-goods-wrapper_list {
                 display: grid;
@@ -47,12 +54,10 @@
                 grid-template-rows: 1fr 1fr;
                 gap: 0 20px;
 
-            }
-
-            .four-goods-wrapper__main-title {
-                font-size: 30px;
+                .four-goods-wrapper_list-item {
+                    margin-bottom: 20px;
+                }
             }
         }
     }
-
 }

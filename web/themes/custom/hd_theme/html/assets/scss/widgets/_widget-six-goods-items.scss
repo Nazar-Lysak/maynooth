@@ -3,6 +3,7 @@
     margin-bottom: 50px;
 
     .wrapper {
+        padding: 0 20px;
         margin: 0 auto;
         max-width: $breakpoint-max;
         display: grid;
@@ -26,6 +27,21 @@
                 img {
                     width: 100%;
                     height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    .widget_six-goods-items {
+        .wrapper {
+            grid-template-columns: 1fr;
+            gap: 52px;
+
+            .wraper-item {
+                &::after {
+                    background: none;
                 }
             }
         }

@@ -1,9 +1,13 @@
+@import './additional_styles/varibles';
+@import './additional_styles/mixin';
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6{
+  line-height: 40px;
   padding: 5px 0;
   text-shadow: 0 1px 0 #ccc,
   0 2px 0 #c9c9c9,
@@ -19,17 +23,17 @@ h6{
   0 20px 20px rgba(0,0,0,.15);
 }
 
+h1{@include adaptiv-font(46, 28);text-align:center;}
+h2{@include adaptiv-font(40, 26);text-align:center;}
+h3{@include adaptiv-font(28, 24);text-align:center;}
+h4{@include adaptiv-font(22, 20);text-align:center;}
+h5{@include adaptiv-font(18, 18);text-align:center;}
+h6{@include adaptiv-font(16, 16);text-align:center;}
+
 p {
-font-weight: 400;
-font-size: 17px;
-line-height: 25px;
+  @include adaptiv-font(16, 14);
+  font-weight: 400;
+  line-height: 25px;
   padding: 5px 0;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}z
-
-h1{font-size: 46px; text-align: center;}
-h2{font-size: 40px; text-align: center;}
-h3{font-size: 28px; text-align: center;}
-h4{font-size: 22px; text-align: center;}
-h5{font-size: 18px; text-align: center;}
-h6{font-size: 16px; text-align: center;}
+}

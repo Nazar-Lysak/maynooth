@@ -47,9 +47,14 @@
 
 @media screen and (max-width: $breakpoint-sm) {
     .paragraph--type--main-banner {
+        padding-top: 20px;
         .containter {
             .field--name-field-main-image {
                 display: none;
+            }
+
+            p {
+                padding: 20px 0;
             }
 
             .field--name-field-mobile-image {
