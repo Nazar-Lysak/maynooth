@@ -8,6 +8,10 @@
       burgerMenu.addEventListener('click', () => {
         burgerMenu.classList.toggle("active");
         mainMenu.classList.toggle("active");
+
+        mainMenu.classList.toggle('.burger-menu')
+        ? document.querySelector('body').style.overflow = "hidden"
+        : document.querySelector('body').style.overflow = "auto"
       })
     }
   };
