@@ -5,7 +5,7 @@
       });
       $('.product__images .slider-nav .product-slider', context).slick({
         asNavFor: '.product__images .slider-for .product-slider',
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         focusOnSelect: true
       });
