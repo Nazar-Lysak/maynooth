@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.main_banner.field_main_image
     - field.field.paragraph.main_banner.field_main_link_button
     - field.field.paragraph.main_banner.field_main_title
+    - field.field.paragraph.main_banner.field_mobile_image
     - paragraphs.paragraphs_type.main_banner
   module:
     - image
@@ -52,5 +53,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_mobile_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 4
     region: content
 hidden: {  }

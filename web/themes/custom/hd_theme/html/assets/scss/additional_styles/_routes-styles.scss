@@ -5,10 +5,16 @@
 @import './additional_styles/mixin';
 @import './fonts-styles';
 
+/* Blog */
+
+@import '../blog/blog-node';
+
 /* Blocks */
 
 @import './blocks/footer';
 @import './blocks/header';
+@import '../blocks/pager';
+@import '../blocks/breadcrumb';
 
 /* widgets */
 
@@ -25,6 +31,7 @@
 /* Views */
 
 @import './views/new-in-store';
+@import '../views/blog-page-list';
 
 /* UI */
 

@@ -1,0 +1,22 @@
+uuid: 9c00a585-5391-447a-b675-5791e3345812
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_long_summary.field_text_summary
+    - paragraphs.paragraphs_type.text_long_summary
+  module:
+    - text
+id: paragraph.text_long_summary.default
+targetEntityType: paragraph
+bundle: text_long_summary
+mode: default
+content:
+  field_text_summary:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
