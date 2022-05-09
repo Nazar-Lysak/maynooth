@@ -9,6 +9,20 @@
     }
   };
 
+  Drupal.behaviors.topToScreenBehavior = {
+    attach: function (context, settings) {
+      const upScreen = document.querySelector('.up-to-top')
+      $(function () {
+        upScreen.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          })
+        })
+      })
+    }
+  };
+
 })(jQuery, Drupal, once);
 
 
