@@ -1,19 +1,71 @@
-<div class="product">
-  <div class="product__variation-title">
-    {{ product.variation_title }}
+<div class="product-wrapper container">
+
+  <div class="product_heading">
+      {{ product.field_rating }}
+    <h2>
+      {{ product.variation_title.0 }}
+    </h2>
   </div>
-  <div class="product__rating">
-    {{ product.field_rating }}
+  <div class="product-content">
+    <div class="product__images">
+      <div class="slider-for">
+        {{ product.variation_field_image }}
+      </div>
+      <div class="slider-nav">
+        {{ product.variation_field_image }}
+      </div>
+    </div>
+    <div class="product description">
+      <div class="description-top">
+        {{ product.body }}
+        <p class="product-price">
+          {{ product.variation_price.0 }}
+        </p>
+      </div>
+      <div class="description-middle">
+        {{ product.variations.0 }}
+      </div>
+        <div class="description-bottom">
+            {{ product.field_tabs }}
+        </div>
+    </div>
+  </div>
+  <div class="product__similar-products">
+    {{ product.field_similar_products }}
+  </div>
+  {{ kint(product.variations) }}
+</div>
+
+
+  {# <div class="product-content">
+
+
+
+
+{# </div> #}
+
+
+  {# <div class="product__rating">
+
   </div>
   <div class="product__images">
+    <div class="slider-for">
     {{ product.variation_field_image }}
+    </div>
+    <div class="slider-nav">
+    {{ product.variation_field_image }}
+    </div>
   </div>
   <div class="product__variation">
     {{ product.body }}
     {{ product.variation_price }}
+    <div class="form-cart">
+      {{ product.variations }}
+    </div>
     {{ product.field_tabs }}
   </div>
   <div class="product__similar-products">
     {{ product.field_similar_products }}
   </div>
-</div>
+   #}
+

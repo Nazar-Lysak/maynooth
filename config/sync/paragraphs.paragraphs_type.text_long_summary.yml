@@ -1,0 +1,10 @@
+uuid: 29a19931-610b-4c5a-b496-5544f878d9f8
+langcode: en
+status: true
+dependencies: {  }
+id: text_long_summary
+label: 'Text Long Summary'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

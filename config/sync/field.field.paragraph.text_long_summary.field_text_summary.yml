@@ -1,0 +1,23 @@
+uuid: 58a8539b-64ba-4562-815b-19f3e78b7959
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_summary
+    - paragraphs.paragraphs_type.text_long_summary
+  module:
+    - text
+id: paragraph.text_long_summary.field_text_summary
+field_name: field_text_summary
+entity_type: paragraph
+bundle: text_long_summary
+label: 'Text summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary
