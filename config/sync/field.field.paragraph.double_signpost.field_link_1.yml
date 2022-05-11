@@ -1,0 +1,23 @@
+uuid: 1c4fe55a-cfda-42c5-bc2a-5bb27ee57bba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_1
+    - paragraphs.paragraphs_type.double_signpost
+  module:
+    - link
+id: paragraph.double_signpost.field_link_1
+field_name: field_link_1
+entity_type: paragraph
+bundle: double_signpost
+label: 'Link block one'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

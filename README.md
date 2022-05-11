@@ -34,5 +34,7 @@ drush cr
 3 створити гілку дз з master (git checkout -b branch_name)
 3 запушити гілку і створити мерж реквест в свою основну гілку (git pull origin branch_name)
 
-# Notes
-### Main page has been created ussing paragraphs
+# Issues
+### Double-signpost => text block response
+
+

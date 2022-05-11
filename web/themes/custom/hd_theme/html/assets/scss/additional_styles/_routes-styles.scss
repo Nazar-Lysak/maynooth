@@ -5,6 +5,7 @@
 @import './additional_styles/mixin';
 @import './fonts-styles';
 @import '../additional_styles/UI/scrollbar/scrollbar';
+@import '../additional_styles/UI/links/links-double-signpost';
 
 /* Blog */
 
@@ -25,9 +26,12 @@
 
 /* paragraphs */
 
-@import './paragraphs/main-banner';
-@import './paragraphs/four-goods-items';
-@import './paragraphs/promo';
+@import '../paragraphs/main-banner';
+@import '../paragraphs/four-goods-items';
+@import '../paragraphs/promo';
+@import '../paragraphs/additional-banner-one';
+@import '../paragraphs/simple-slider';
+@import '../paragraphs/double-signpost.scss';
 
 /* Views */
 
@@ -44,3 +48,5 @@
 @import './additional_styles/UI/links/links_new-in-store-views';
 @import './additional_styles/UI/cards/six-goods-animation';
 @import './additional_styles/UI/burger-menu/burger-menu.scss';
+
+

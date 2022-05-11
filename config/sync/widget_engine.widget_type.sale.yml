@@ -3,4 +3,4 @@ langcode: en
 status: true
 dependencies: {  }
 id: sale
-label: Sale
+label: 'widget - Sale'

@@ -1,0 +1,23 @@
+uuid: e2450a29-58d7-4c20-a65e-d3f7e4759e4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_desc_1
+    - paragraphs.paragraphs_type.double_signpost
+  module:
+    - text
+id: paragraph.double_signpost.field_block_desc_1
+field_name: field_block_desc_1
+entity_type: paragraph
+bundle: double_signpost
+label: 'Block description one'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

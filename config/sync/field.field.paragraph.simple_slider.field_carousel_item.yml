@@ -1,0 +1,61 @@
+uuid: a5e5c3c4-678e-4167-8fc7-e8733beb4b3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carousel_item
+    - paragraphs.paragraphs_type.simple_slider
+    - paragraphs.paragraphs_type.simple_slider_item_
+  module:
+    - entity_reference_revisions
+id: paragraph.simple_slider.field_carousel_item
+field_name: field_carousel_item
+entity_type: paragraph
+bundle: simple_slider
+label: 'carousel item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      simple_slider_item_: simple_slider_item_
+    negate: 0
+    target_bundles_drag_drop:
+      additional_banner_one:
+        weight: 12
+        enabled: false
+      four_goods_items:
+        weight: 13
+        enabled: false
+      image:
+        weight: 14
+        enabled: false
+      inspiration:
+        weight: 15
+        enabled: false
+      main_banner:
+        weight: 16
+        enabled: false
+      new_in_store:
+        weight: 17
+        enabled: false
+      product_tabs:
+        weight: 18
+        enabled: false
+      promo:
+        weight: 19
+        enabled: false
+      simple_slider:
+        weight: 20
+        enabled: false
+      simple_slider_item_:
+        weight: 21
+        enabled: true
+      text_long_summary:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

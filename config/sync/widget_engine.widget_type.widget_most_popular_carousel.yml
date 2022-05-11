@@ -1,0 +1,6 @@
+uuid: 7452378d-c0fd-41dc-9525-2f4d31238580
+langcode: en
+status: true
+dependencies: {  }
+id: widget_most_popular_carousel
+label: 'widget - Most Popular carousel'

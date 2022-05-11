@@ -23,6 +23,19 @@
     }
   };
 
+  Drupal.behaviors.simpleSliderBehavior = {
+    attach: function (context, settings) {
+      $('.paragraph--type--simple-slider .slider-for', context).slick({
+      });
+      $('.paragraph--type--simple-slider .slider-nav', context).slick({
+        asNavFor: '.paragraph--type--simple-slider .slider-for',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        focusOnSelect: true
+      });
+    }
+  };
+
 })(jQuery, Drupal, once);
 
 

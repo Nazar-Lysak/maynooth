@@ -1,0 +1,19 @@
+uuid: ef6c1d86-851c-4fc9-b0ce-d09d81149926
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - starrating
+id: paragraph.field_rating
+field_name: field_rating
+entity_type: paragraph
+type: starrating
+settings: {  }
+module: starrating
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

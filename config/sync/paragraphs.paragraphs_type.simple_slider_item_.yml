@@ -1,0 +1,10 @@
+uuid: ca3d7521-695d-4912-94a1-ac3678e32179
+langcode: en
+status: true
+dependencies: {  }
+id: simple_slider_item_
+label: 'Simple slider (item)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

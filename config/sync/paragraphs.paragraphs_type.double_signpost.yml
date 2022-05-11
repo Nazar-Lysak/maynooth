@@ -1,0 +1,10 @@
+uuid: 72e0d16e-6fb6-4d6e-9399-b0f078f4a1b6
+langcode: en
+status: true
+dependencies: {  }
+id: double_signpost
+label: 'Double Signpost'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
