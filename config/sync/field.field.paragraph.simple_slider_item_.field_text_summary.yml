@@ -1,0 +1,23 @@
+uuid: d5891e78-702b-432e-b360-295962a8671c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_summary
+    - paragraphs.paragraphs_type.simple_slider_item_
+  module:
+    - text
+id: paragraph.simple_slider_item_.field_text_summary
+field_name: field_text_summary
+entity_type: paragraph
+bundle: simple_slider_item_
+label: 'Text summary'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

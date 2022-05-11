@@ -1,0 +1,23 @@
+uuid: 87dec172-f198-4656-aa79-d652a277d2a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_summary
+    - paragraphs.paragraphs_type.additional_banner_one
+  module:
+    - text
+id: paragraph.additional_banner_one.field_text_summary
+field_name: field_text_summary
+entity_type: paragraph
+bundle: additional_banner_one
+label: 'Text summary'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

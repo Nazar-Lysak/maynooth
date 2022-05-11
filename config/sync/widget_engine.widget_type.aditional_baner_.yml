@@ -3,4 +3,4 @@ langcode: en
 status: true
 dependencies: {  }
 id: aditional_baner_
-label: 'Aditional Baner '
+label: 'widget - Aditional Baner '

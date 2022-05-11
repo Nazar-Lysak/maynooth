@@ -1,0 +1,53 @@
+{%
+  set classes = [
+
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+    <div class="container">
+      <h2>
+        {{ content.field_title.0 }}
+      </h2>
+      <div class="double-signpost">
+        <div class="left-row">
+          {{ content.field_fg_img_1 }}
+          <div class="left-row_content">
+            <p class="content_short-desc">
+              {{ content.	field_short_desc_1.0 }}
+            </p>
+            <h3>
+              {{ content.field_block_title_1.0 }}
+            </h3>
+            <p class="content_description">
+              {{ content.field_block_desc_1.0 }}
+            </p>
+            {{ content.field_link_1 }}
+          </div>
+        </div>
+        <div class="right-row">
+          {{ content.field_fg_img_2 }}
+          <div class="right-row_content">
+            <p class="content_short-desc">
+              {{ content.	field_short_desc_2.0 }}
+            </p>
+            <h3>
+              {{ content.field_block_title_2.0 }}
+            </h3>
+            <p class="content_description">
+              {{ content.field_block_desc_2.0 }}
+            </p>
+            {{ content.field_link_2.0 }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

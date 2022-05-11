@@ -1,0 +1,19 @@
+uuid: 8d8845af-b8a1-4059-b6cf-11f454d1da6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_title
+    - paragraphs.paragraphs_type.additional_banner_one
+id: paragraph.additional_banner_one.field_main_title
+field_name: field_main_title
+entity_type: paragraph
+bundle: additional_banner_one
+label: 'Main Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

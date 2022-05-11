@@ -3,4 +3,4 @@ langcode: en
 status: true
 dependencies: {  }
 id: six_goods_items
-label: 'six goods items'
+label: 'widget - six goods items'

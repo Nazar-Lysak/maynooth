@@ -1,0 +1,19 @@
+uuid: 585abf53-f085-41c7-9593-77e82d9e4e9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.double_signpost
+id: paragraph.double_signpost.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: double_signpost
+label: 'Main Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

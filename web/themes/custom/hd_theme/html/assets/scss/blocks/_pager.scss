@@ -15,12 +15,17 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             background-color: $brown;
             background-image: linear-gradient($brown, $gray);
-            padding: 10px;
             margin: 0 10px;
             border-radius: 5px;
             height: 40px;
             width: 40px;
-            text-align: center;
+            display: table;
+
+            a {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
         }
 
         .is-active {
@@ -44,7 +49,5 @@
             justify-content: center;
             align-items: center;
         }
-
-
     }
 }
