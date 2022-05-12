@@ -4,11 +4,40 @@
   margin-top: 10px;
   padding: 0 20px;
 
+  .product--rendered-attribute__selected {
+    // display: block !important;
+  }
+  .product--rendered-attribute__selected ~ .field--name-name {
+    opacity: 1;
+  }
+
+  .slick-arrow {
+    display: none !important;
+  }
+
+  img {
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 27px -17px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 27px -17px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 27px -17px rgba(66, 68, 90, 1);
+  }
+
   p {
     line-height: 20px;
   }
 
   .product_heading {
+
+    .starrating {
+      display: flex;
+      padding: 10px;
+      .rate-image {
+        float: none;
+        transform: scale(1.2);
+        margin-right: 2px;
+      }
+    }
     h2 {
       padding-left: 10px;
       text-align: left;
@@ -64,8 +93,8 @@
                 width: 100%;
 
                 img {
-                  width: 100%;
-                  height: auto;
+                  width: 145px;
+                  height: 159px;
 
                 }
               }
@@ -114,26 +143,57 @@
         border-bottom: solid 1px $brown;
         margin-bottom: 15px;
         padding-bottom: 30px;
+        position: relative;
 
-        legend {
-          margin-bottom: 10px;
+        .ajax-progress {
+          display: none;
         }
 
-        // .form-radios {
-        //   .option {
+        .product--rendered-attribute {
+          margin-top: 30px;
+          legend {
+            display: none;
+          }
+        }
 
-        //   }
-        // }
+        .js-form-type-number {
+          font-size: 18px;
+          text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+          label {
+            font-size: 18px;
+            text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+            &:after {
+              content: ':';
+            }
+          }
+        }
+
+        .form-radios {
+          label {
+            // border: none;
+          }
+        }
 
         .js-form-type-radio {
           padding-bottom: 15px;
+          height: 100px;
 
-          // .field--type-string {
-          //   // display: none;
-          // }
+          .field--name-name {
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+            text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+            opacity: 1;
+
+            // sadasda
+
+
+          }
 
           .color_field__swatch {
             border-radius: 50%;
+            margin-top: 40px;
             border: solid 1px gray;
             height: 20px !important;
             width: 20px !important;
@@ -144,6 +204,7 @@
         .form-type-number {
           input {
             border: solid 1px gray;
+            border-radius: 2px;
             width: 60px;
             height: 40px;
             text-align: center;
@@ -169,10 +230,11 @@
                 text-align: center;
                 cursor: pointer;
                 transition: all ease-in-out .3s;
+                border-radius: 3px;
               }
 
               .field-tab__item_active {
-                background-color: $brown;
+                background-color: $gray;
               }
             }
 
@@ -199,7 +261,28 @@
   }
 
   .product__similar-products {
-    margin-bottom: 100px;
+    margin: 120px 0 100px;
+
+    h4 {
+      text-align: left;
+    }
+
+    .title-wraper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px   5px;
+
+      p {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: right;
+      text-transform: capitalize;
+      color: $violet;
+      padding: 0 5px;
+      }
+    }
 
     .similar-products__label {
       text-align: center;
@@ -221,7 +304,6 @@
           max-width: 400px;
           height: 440px;
           width: 100%;
-          object-fit: cover;
         }
 
         .field--name-title {
@@ -252,12 +334,11 @@
       .field-content__item {
         max-width: 100% !important;
         padding-right: 20px;
-
-
       }
     }
 
-    .product__similar-products {x
+    .product__similar-products {
+      margin-top: 100px;
 
       .similar-products__label {
         font-size: 32px !important;
@@ -308,6 +389,7 @@
 @media screen and (max-width: 430px) {
   .product-wrapper {
     .product__similar-products {
+      margin-top: 250px;
       .similar-products__label {
         margin: 220px 0 20px !important;
       }

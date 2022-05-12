@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - block_class
+    - commerce_product
     - system
   theme:
     - hd_theme
@@ -25,4 +26,11 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/user/1\r\n/node/3\r\n/node/4\r\n/node/21\r\n/user/login/\r\n"
+    pages: "/user/1\r\n/node/3\r\n/node/4\r\n/node/21\r\n/node/22\r\n/user/login/\r\n"
+  'entity_bundle:commerce_product':
+    id: 'entity_bundle:commerce_product'
+    negate: false
+    context_mapping:
+      commerce_product: '@commerce_product.product_route_context:commerce_product'
+    bundles:
+      sofa: sofa

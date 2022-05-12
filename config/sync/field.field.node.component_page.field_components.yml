@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_components
     - node.type.component_page
+    - paragraphs.paragraphs_type.404_banner
     - paragraphs.paragraphs_type.additional_banner_one
     - paragraphs.paragraphs_type.double_signpost
     - paragraphs.paragraphs_type.four_goods_items
@@ -35,42 +36,46 @@ settings:
       additional_banner_one: additional_banner_one
       simple_slider: simple_slider
       double_signpost: double_signpost
+      404_banner: 404_banner
     negate: 0
     target_bundles_drag_drop:
-      additional_banner_one:
-        weight: -21
-        enabled: true
-      double_signpost:
-        weight: -19
-        enabled: true
-      four_goods_items:
-        weight: -25
-        enabled: true
-      image:
-        weight: -16
-        enabled: false
-      inspiration:
-        weight: -17
-        enabled: false
-      main_banner:
-        weight: -24
-        enabled: true
-      new_in_store:
-        weight: -22
-        enabled: true
-      product_tabs:
-        weight: -18
-        enabled: false
-      promo:
-        weight: -23
-        enabled: true
-      simple_slider:
+      404_banner:
         weight: -20
         enabled: true
+      additional_banner_one:
+        weight: -23
+        enabled: true
+      double_signpost:
+        weight: -21
+        enabled: true
+      four_goods_items:
+        weight: -27
+        enabled: true
+      image:
+        weight: -17
+        enabled: false
+      inspiration:
+        weight: -18
+        enabled: false
+      main_banner:
+        weight: -26
+        enabled: true
+      new_in_store:
+        weight: -24
+        enabled: true
+      product_tabs:
+        weight: -19
+        enabled: false
+      promo:
+        weight: -25
+        enabled: true
+      simple_slider:
+        weight: -22
+        enabled: true
       simple_slider_item_:
-        weight: -14
+        weight: -15
         enabled: false
       text_long_summary:
-        weight: -15
+        weight: -16
         enabled: false
 field_type: entity_reference_revisions

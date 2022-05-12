@@ -1,0 +1,10 @@
+uuid: ae538311-efd9-40cf-a7f4-a8740f943e6f
+langcode: en
+status: true
+dependencies: {  }
+id: 404_banner
+label: '404 banner'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
