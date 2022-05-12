@@ -9,9 +9,6 @@
         slidesToScroll: 1,
         focusOnSelect: true
       });
-      Fancybox.bind(".slider-for .slick-slide img", {
-        // Your options go here
-      });
     }
   };
 
@@ -23,6 +20,16 @@
             .closest('div.tabs').find('div.field-content__item').removeClass('field-content__item_active')
             .eq($(this).index()).addClass('field-content__item_active');
         })
+      })
+    }
+  };
+
+  Drupal.behaviors.fancyBoxBehavior = {
+    attach: function (context, settings) {
+      $(function() {
+        Fancybox.bind(".slider-for .slick-slide img", {
+
+        });
       })
     }
   };
