@@ -1,0 +1,10 @@
+uuid: 8c979487-babf-4c43-bd23-2a93242ebd8d
+langcode: en
+status: true
+dependencies: {  }
+id: living_room_views_
+label: 'living room (views)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

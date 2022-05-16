@@ -1,4 +1,4 @@
-uuid: d1fa2d5e-a00d-44c8-92ac-fce0462e557f
+uuid: 759f6552-2261-4d90-b977-d3e39bd43d5b
 langcode: en
 status: true
 dependencies:
@@ -9,10 +9,10 @@ field_name: field_similar_products
 entity_type: commerce_product
 type: entity_reference
 settings:
-  target_type: commerce_product_variation
+  target_type: commerce_product
 module: core
 locked: false
-cardinality: 3
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,0 +1,22 @@
+uuid: 4832c2a4-a001-4002-a01d-13035a7381ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.living_room_views_.field_living_rooms_veiws
+    - paragraphs.paragraphs_type.living_room_views_
+  module:
+    - block_field
+id: paragraph.living_room_views_.default
+targetEntityType: paragraph
+bundle: living_room_views_
+mode: default
+content:
+  field_living_rooms_veiws:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

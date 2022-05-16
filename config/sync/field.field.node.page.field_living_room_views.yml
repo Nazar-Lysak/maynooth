@@ -1,0 +1,70 @@
+uuid: d0c4c8f4-1a3b-45ea-b786-04da81681c31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_living_room_views
+    - node.type.page
+    - paragraphs.paragraphs_type.living_room_views_
+  module:
+    - entity_reference_revisions
+id: node.page.field_living_room_views
+field_name: field_living_room_views
+entity_type: node
+bundle: page
+label: 'living room views'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      living_room_views_: living_room_views_
+    negate: 0
+    target_bundles_drag_drop:
+      404_banner:
+        weight: 15
+        enabled: false
+      additional_banner_one:
+        weight: 16
+        enabled: false
+      double_signpost:
+        weight: 17
+        enabled: false
+      four_goods_items:
+        weight: 18
+        enabled: false
+      image:
+        weight: 19
+        enabled: false
+      inspiration:
+        weight: 20
+        enabled: false
+      living_room_views_:
+        weight: 21
+        enabled: true
+      main_banner:
+        weight: 22
+        enabled: false
+      new_in_store:
+        weight: 23
+        enabled: false
+      product_tabs:
+        weight: 24
+        enabled: false
+      promo:
+        weight: 25
+        enabled: false
+      simple_slider:
+        weight: 26
+        enabled: false
+      simple_slider_item_:
+        weight: 27
+        enabled: false
+      text_long_summary:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

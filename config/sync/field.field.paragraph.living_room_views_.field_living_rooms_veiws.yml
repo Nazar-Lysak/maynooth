@@ -1,0 +1,27 @@
+uuid: ec0b875e-6c69-4040-a7be-71aa8b9b6209
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_living_rooms_veiws
+    - paragraphs.paragraphs_type.living_room_views_
+  module:
+    - block_field
+id: paragraph.living_room_views_.field_living_rooms_veiws
+field_name: field_living_rooms_veiws
+entity_type: paragraph
+bundle: living_room_views_
+label: 'living rooms veiws'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    plugin_id: 'views_block:living_room-block_1'
+    settings: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field
