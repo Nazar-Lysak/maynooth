@@ -1,12 +1,17 @@
-{{ product.variation_field_image.0 }}
-<div class="title-wraper">
-    <h4>
-        {{ product.title.0 }}
-    </h4>
-    <p>
-        {{ product.variation_price.0 }}
-    </p>
-</div>
-{{ product.body }}
+<div class="similar-product_body">
 
+  {{ product.variation_field_image.0 }}
+  <div class="title-wraper">
+  <h4>
+    {{ product.title.0 }}
+  </h4>
+  <p>
+    {{ product.variation_price.0 }}
+  </p>
+  </div>
+  {{ product.body }}
+</div>
+<div class="similar-product_url">
+  <a href="{{ product_url }}">{{ 'Shop now'|t }}</a>
+</div>
 
