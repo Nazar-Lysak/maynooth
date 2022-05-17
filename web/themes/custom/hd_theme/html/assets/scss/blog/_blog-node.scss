@@ -23,7 +23,6 @@
             font-size: 16px;
         &:hover {
             color: $violet;
-
         }
     }
 
@@ -46,7 +45,7 @@
 
     ul li::before {
         content: "";
-        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
+        background-image: $li-style;
         background-size: contain;
         display: inline-block;
         width: 1em;

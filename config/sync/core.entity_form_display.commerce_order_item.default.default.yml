@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_order.commerce_order_item_type.default
   module:
+    - commerce_order
     - commerce_price
   enforced:
     module:
@@ -26,15 +27,22 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  quantity:
+    type: commerce_quantity
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      step: '1'
+    third_party_settings: {  }
   unit_price:
     type: commerce_price_default
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   adjustments: true
   created: true
-  quantity: true
   status: true
   uid: true

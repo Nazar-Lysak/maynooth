@@ -14,7 +14,7 @@ third_party_settings:
 id: breadcrumbs
 theme: hd_theme
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:
