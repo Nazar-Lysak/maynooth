@@ -1,12 +1,21 @@
 .breadcrumb {
-    margin: 20px 0;
+    margin: 25px 0 15px 0;
     padding: 0 20px;
 
     ul {
       display: flex;
 
       li {
-        margin-right: 10px;
+        margin-right: 5px;
+        font-size: 18px;
+        color: $violet;
+        .breadcrumb_arrow {
+          color: $dark;
+        }
+        a {
+          color: $dark;
+          margin-right: 2px;
+         }
       }
     }
   }

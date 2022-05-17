@@ -7,6 +7,10 @@
 @import '../additional_styles/UI/scrollbar/scrollbar';
 @import '../additional_styles/UI/links/links-double-signpost';
 
+/* pages */
+@import './user-pages/register';
+@import './user-pages/reset-pass';
+
 /* Blog */
 
 @import '../blog/blog-node';
@@ -50,5 +54,7 @@
 @import './additional_styles/UI/cards/six-goods-animation';
 @import './additional_styles/UI/burger-menu/burger-menu.scss';
 @import './additional_styles/UI/links/link-error-page';
+@import './additional_styles/UI/buttons/button-register-page';
+@import './additional_styles/UI/buttons/button-reset-password';
 
 

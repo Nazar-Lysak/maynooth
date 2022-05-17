@@ -1,8 +1,7 @@
 <div class="product-wrapper container">
-
   <div class="product_heading">
     <h2>
-      {{ product.variation_title.0 }}
+      {{ product.variation_title }}
     </h2>
     {{ product.field_rating }}
   </div>
@@ -18,9 +17,7 @@
     <div class="product description">
       <div class="description-top">
         {{ product.body }}
-        <p class="product-price">
-          {{ product.variation_price.0 }}
-        </p>
+          {{ product.variation_price }}
       </div>
       <div class="description-middle">
         {{ product.variations.0 }}

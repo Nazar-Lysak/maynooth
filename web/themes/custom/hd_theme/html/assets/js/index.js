@@ -9,20 +9,6 @@
     }
   };
 
-  Drupal.behaviors.topToScreenBehavior = {
-    attach: function (context, settings) {
-      const upScreen = document.querySelector('.up-to-top')
-      $(function () {
-        upScreen.addEventListener('click', () => {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          })
-        })
-      })
-    }
-  };
-
   Drupal.behaviors.simpleSliderBehavior = {
     attach: function (context, settings) {
       $('.paragraph--type--simple-slider .slider-for', context).slick({
