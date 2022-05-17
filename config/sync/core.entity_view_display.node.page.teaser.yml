@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.page.field_living_room_views
-    - field.field.node.page.field_living_rooms_views_block
     - field.field.node.page.field_widgets
     - node.type.page
   module:
@@ -21,6 +19,4 @@ content:
     weight: 101
     region: content
 hidden:
-  field_living_room_views: true
-  field_living_rooms_views_block: true
   field_widgets: true

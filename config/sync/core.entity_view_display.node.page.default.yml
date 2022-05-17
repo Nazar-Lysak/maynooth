@@ -3,12 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_living_room_views
-    - field.field.node.page.field_living_rooms_views_block
     - field.field.node.page.field_widgets
     - node.type.page
   module:
-    - entity_reference_revisions
     - user
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
@@ -17,24 +14,6 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  field_living_room_views:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_living_rooms_views_block:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_widgets:
     type: entity_reference_entity_view
     label: hidden
