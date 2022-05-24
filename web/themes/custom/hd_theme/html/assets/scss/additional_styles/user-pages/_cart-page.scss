@@ -1,0 +1,19 @@
+.cart-form {
+    max-width: $breakpoint-max;
+    margin: 0 auto;
+    background-color: antiquewhite;
+
+    .views-table {
+        margin: 0 auto;
+    }
+    img {
+        height: 40px;
+        width: 100px;
+    }
+    th,
+    td {
+        border: solid 1px black;
+        text-align: center;
+    }
+
+}

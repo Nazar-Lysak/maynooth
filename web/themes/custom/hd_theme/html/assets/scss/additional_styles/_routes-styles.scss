@@ -10,6 +10,8 @@
 /* pages */
 @import './user-pages/register';
 @import './user-pages/reset-pass';
+@import './user-pages/cart-page';
+@import './user-pages/contact-page.scss';
 
 /* Blog */
 
@@ -31,7 +33,7 @@
 
 /* paragraphs */
 
-@import '../paragraphs/main-banner';
+// @import '../paragraphs/main-banner';
 @import '../paragraphs/four-goods-items';
 @import '../paragraphs/promo';
 @import '../paragraphs/additional-banner-one';
@@ -50,6 +52,7 @@
 @import './additional_styles/UI/links/links-footer-nav';
 @import './additional_styles/UI/buttons/button-primary';
 @import './additional_styles/UI/buttons/button-widget-features-comp';
+@import '../additional_styles/UI/buttons/button-contact-us';
 @import './additional_styles/UI/links/links-for-goods-comp';
 @import './additional_styles/UI/links/links_new-in-store-views';
 @import './additional_styles/UI/cards/six-goods-animation';

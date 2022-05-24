@@ -49,3 +49,8 @@ fancy-box:
   css:
     base:
       /libraries/fancybox/dist/fancybox.css: {}
+
+paragraph--main-banner:
+  css:
+    base:
+      html/src/css/main-banner.css: {}
