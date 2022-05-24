@@ -1,0 +1,71 @@
+uuid: f59cdac5-4ab1-448b-8634-6ff458954bd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_products_slider_item
+    - paragraphs.paragraphs_type.products_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.products_slider.field_products_slider_item
+field_name: field_products_slider_item
+entity_type: paragraph
+bundle: products_slider
+label: 'Products slider item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+    target_bundles_drag_drop:
+      404_banner:
+        weight: 16
+        enabled: false
+      additional_banner_one:
+        weight: 17
+        enabled: false
+      double_signpost:
+        weight: 18
+        enabled: false
+      four_goods_items:
+        weight: 19
+        enabled: false
+      image:
+        weight: 20
+        enabled: false
+      inspiration:
+        weight: 21
+        enabled: false
+      main_banner:
+        weight: 22
+        enabled: false
+      new_in_store:
+        weight: 23
+        enabled: false
+      product_tabs:
+        weight: 26
+        enabled: false
+      products_slider:
+        weight: 24
+        enabled: false
+      products_slider_item:
+        weight: 25
+        enabled: true
+      promo:
+        weight: 27
+        enabled: false
+      simple_slider:
+        weight: 28
+        enabled: false
+      simple_slider_item_:
+        weight: 29
+        enabled: false
+      text_long_summary:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

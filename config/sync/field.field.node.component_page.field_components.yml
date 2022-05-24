@@ -11,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.four_goods_items
     - paragraphs.paragraphs_type.main_banner
     - paragraphs.paragraphs_type.new_in_store
+    - paragraphs.paragraphs_type.products_slider
     - paragraphs.paragraphs_type.promo
     - paragraphs.paragraphs_type.simple_slider
   module:
@@ -37,45 +38,49 @@ settings:
       simple_slider: simple_slider
       double_signpost: double_signpost
       404_banner: 404_banner
+      products_slider: products_slider
     negate: 0
     target_bundles_drag_drop:
       404_banner:
-        weight: -20
-        enabled: true
-      additional_banner_one:
-        weight: -23
-        enabled: true
-      double_signpost:
-        weight: -21
-        enabled: true
-      four_goods_items:
-        weight: -27
-        enabled: true
-      image:
-        weight: -17
-        enabled: false
-      inspiration:
-        weight: -18
-        enabled: false
-      main_banner:
-        weight: -26
-        enabled: true
-      new_in_store:
-        weight: -24
-        enabled: true
-      product_tabs:
-        weight: -19
-        enabled: false
-      promo:
-        weight: -25
-        enabled: true
-      simple_slider:
         weight: -22
         enabled: true
+      additional_banner_one:
+        weight: -25
+        enabled: true
+      double_signpost:
+        weight: -23
+        enabled: true
+      four_goods_items:
+        weight: -29
+        enabled: true
+      image:
+        weight: -18
+        enabled: false
+      inspiration:
+        weight: -19
+        enabled: false
+      main_banner:
+        weight: -28
+        enabled: true
+      new_in_store:
+        weight: -26
+        enabled: true
+      product_tabs:
+        weight: -20
+        enabled: false
+      products_slider:
+        weight: -21
+        enabled: true
+      promo:
+        weight: -27
+        enabled: true
+      simple_slider:
+        weight: -24
+        enabled: true
       simple_slider_item_:
-        weight: -15
+        weight: -16
         enabled: false
       text_long_summary:
-        weight: -16
+        weight: -17
         enabled: false
 field_type: entity_reference_revisions
