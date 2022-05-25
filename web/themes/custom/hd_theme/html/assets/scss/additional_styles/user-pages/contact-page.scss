@@ -13,6 +13,7 @@
 
     .form-item-name {
         font-weight: bold;
+        padding: 10px 0;
         label {
             font-style: italic;
             font-weight: normal;
@@ -100,6 +101,7 @@
         padding: 10px 0;
         input {
             padding: 10px 5px;
+            margin: 5px 15px;
         }
     }
 }
