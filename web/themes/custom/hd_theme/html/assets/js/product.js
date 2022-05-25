@@ -7,7 +7,17 @@
         asNavFor: '.product__images .slider-for .product-slider',
         slidesToShow: 4,
         slidesToScroll: 1,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 576,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            focusOnSelect: true
+            }
+          }
+        ]
       });
     }
   };
