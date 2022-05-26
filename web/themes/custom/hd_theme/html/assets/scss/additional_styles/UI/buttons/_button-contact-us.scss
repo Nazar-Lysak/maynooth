@@ -1,0 +1,30 @@
+@import '../../varibles';
+
+.contact-message-feedback-form {
+
+    .form-actions {
+        position: relative;
+
+        input  {
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+            overflow: hidden;
+            -webkit-transition: all ease .5s;
+            transition: all ease .5s;
+            background-color: $violet;
+            color: $white;
+            font-size: 16px;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+            box-shadow: 0px 4px 4px 0px #00000040;
+            bottom: 1px;
+            left: 150px;
+
+            &:hover {
+                background-color: darken($color: $violet, $amount: 7%);
+            }
+        }
+    }
+}
+

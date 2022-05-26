@@ -1,0 +1,84 @@
+.paragraph--type--view-most-popular {
+    margin: 40px 0;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .most-popular {
+
+        .view-content {
+
+            .slick-prev {
+                width: 58px;
+                height: 52px;
+                background: #E5E5E5;
+                border-radius: 5px;
+                z-index: 5;
+                left: 25px;
+
+                &::before {
+                    color: #000;
+                    font-size: 32px;
+                }
+            }
+
+            .slick-next {
+                width: 58px;
+                height: 52px;
+                background: #E5E5E5;
+                border-radius: 5px;
+                z-index: 5;
+                right: 25px;
+                &::before {
+                    color: #000;
+                    font-size: 32px;
+                }
+            }
+
+            .slick-list {
+
+                .slick-slide:nth-child(odd) {
+                    height: 460px;
+                }
+
+                .slick-slide {
+                    max-width: 290px;
+                    background-color: #c4c4c4;
+                    display: flex;
+                    justify-content: center;
+                    margin: 20px;
+                    padding: 40px 38px;
+
+
+                    .views-row {
+
+                        img {
+                            height: 215px;
+                            max-width: 200px;
+                            object-fit: cover;
+
+                        }
+                    }
+
+                    .views-field-title {
+                        padding: 30px 10px 10px;
+                        font-weight: 400;
+                        font-size: 24.947px;
+                        line-height: 29px;
+                        text-align: center;
+                        text-transform: capitalize;
+                    }
+
+                    .views-field-price__number {
+                        font-weight: 700;
+                        font-size: 25px;
+                        text-transform: capitalize;
+                        text-align: center;
+                        color: #842C68;
+                    }
+                }
+            }
+        }
+    }
+}

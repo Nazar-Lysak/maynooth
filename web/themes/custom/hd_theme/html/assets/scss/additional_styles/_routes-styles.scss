@@ -1,5 +1,4 @@
 /* additional_styles */
-
 @import './additional_styles/reset.scss';
 @import './additional_styles/varibles';
 @import './additional_styles/mixin';
@@ -10,13 +9,13 @@
 /* pages */
 @import './user-pages/register';
 @import './user-pages/reset-pass';
+@import './user-pages/cart-page';
+@import './user-pages/contact-page.scss';
 
 /* Blog */
-
 @import '../blog/blog-node';
 
 /* Blocks */
-
 @import './blocks/footer';
 @import './blocks/header';
 @import '../blocks/pager';
@@ -24,14 +23,12 @@
 @import '../blocks/tabs';
 
 /* widgets */
-
 @import './widgets/widget-additional-banner';
 @import './widgets/widget-six-goods-items';
 @import './widgets/widget-features-component';
 
 /* paragraphs */
-
-@import '../paragraphs/main-banner';
+// @import '../paragraphs/main-banner';
 @import '../paragraphs/four-goods-items';
 @import '../paragraphs/promo';
 @import '../paragraphs/additional-banner-one';
@@ -40,22 +37,25 @@
 @import '../paragraphs/error-page';
 
 /* Views */
-
 @import './views/new-in-store';
 @import '../views/blog-page-list';
+@import '../views/most-popular-on-maynooth.scss';
 
 /* UI */
-
 @import './additional_styles/UI/links/links-header-nav';
 @import './additional_styles/UI/links/links-footer-nav';
-@import './additional_styles/UI/buttons/button-primary';
-@import './additional_styles/UI/buttons/button-widget-features-comp';
 @import './additional_styles/UI/links/links-for-goods-comp';
 @import './additional_styles/UI/links/links_new-in-store-views';
-@import './additional_styles/UI/cards/six-goods-animation';
-@import './additional_styles/UI/burger-menu/burger-menu.scss';
 @import './additional_styles/UI/links/link-error-page';
+@import './additional_styles/UI/buttons/button-primary';
+@import '../additional_styles/UI/buttons/button-contact-us';
+@import './additional_styles/UI/buttons/button-widget-features-comp';
 @import './additional_styles/UI/buttons/button-register-page';
 @import './additional_styles/UI/buttons/button-reset-password';
+@import './UI/buttons/button-cart';
+@import './additional_styles/UI/cards/six-goods-animation';
+@import './additional_styles/UI/burger-menu/burger-menu.scss';
+
+
 
 
