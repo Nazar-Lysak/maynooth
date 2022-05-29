@@ -14,6 +14,7 @@ dependencies:
     - paragraphs.paragraphs_type.products_slider
     - paragraphs.paragraphs_type.promo
     - paragraphs.paragraphs_type.simple_slider
+    - paragraphs.paragraphs_type.view_most_popular
   module:
     - entity_reference_revisions
 id: node.component_page.field_components
@@ -39,48 +40,52 @@ settings:
       double_signpost: double_signpost
       404_banner: 404_banner
       products_slider: products_slider
+      view_most_popular: view_most_popular
     negate: 0
     target_bundles_drag_drop:
       404_banner:
-        weight: -22
-        enabled: true
-      additional_banner_one:
-        weight: -25
-        enabled: true
-      double_signpost:
-        weight: -23
-        enabled: true
-      four_goods_items:
-        weight: -29
-        enabled: true
-      image:
-        weight: -18
-        enabled: false
-      inspiration:
-        weight: -19
-        enabled: false
-      main_banner:
-        weight: -28
-        enabled: true
-      new_in_store:
-        weight: -26
-        enabled: true
-      product_tabs:
-        weight: -20
-        enabled: false
-      products_slider:
-        weight: -21
-        enabled: true
-      promo:
-        weight: -27
-        enabled: true
-      simple_slider:
         weight: -24
         enabled: true
-      simple_slider_item_:
-        weight: -16
+      additional_banner_one:
+        weight: -27
+        enabled: true
+      double_signpost:
+        weight: -25
+        enabled: true
+      four_goods_items:
+        weight: -31
+        enabled: true
+      image:
+        weight: -19
         enabled: false
-      text_long_summary:
+      inspiration:
+        weight: -20
+        enabled: false
+      main_banner:
+        weight: -30
+        enabled: true
+      new_in_store:
+        weight: -28
+        enabled: true
+      product_tabs:
+        weight: -21
+        enabled: false
+      products_slider:
+        weight: -23
+        enabled: true
+      promo:
+        weight: -29
+        enabled: true
+      simple_slider:
+        weight: -26
+        enabled: true
+      simple_slider_item_:
         weight: -17
         enabled: false
+      text_long_summary:
+        weight: -18
+        enabled: false
+      view_most_popular:
+        weight: -22
+        enabled: true
 field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+uuid: 783d8369-29db-4daf-9562-9eaae98baa23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.view_most_popular.field_view_
+    - paragraphs.paragraphs_type.view_most_popular
+  module:
+    - block_field
+id: paragraph.view_most_popular.default
+targetEntityType: paragraph
+bundle: view_most_popular
+mode: default
+content:
+  field_view_:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

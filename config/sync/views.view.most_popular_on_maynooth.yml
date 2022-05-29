@@ -1,21 +1,23 @@
-uuid: 064fe7ed-236c-4470-958a-ad476bd3d5de
+uuid: 844f2708-b58d-48a0-b7f0-49dbc1be76f4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.commerce_product.body
-    - field.storage.commerce_product.field_img_to_card
+    - commerce_product.commerce_product_variation_type.sofa
+    - field.storage.commerce_product_variation.field_image
+    - image.style.medium
   module:
+    - commerce
+    - commerce_price
     - commerce_product
     - image
-    - text
-id: new_in_store
-label: 'New in Store'
+id: most_popular_on_maynooth
+label: 'Most Popular on Maynooth'
 module: views
 description: ''
 tag: ''
-base_table: commerce_product_field_data
-base_field: product_id
+base_table: commerce_product_variation_field_data
+base_field: variation_id
 display:
   default:
     id: default
@@ -23,12 +25,12 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Looking for What’s New in Store?'
+      title: 'Most Popular on Maynooth'
       fields:
-        field_img_to_card:
-          id: field_img_to_card
-          table: commerce_product__field_img_to_card
-          field: field_img_to_card
+        field_image:
+          id: field_image
+          table: commerce_product_variation__field_image
+          field: field_image
           relationship: none
           group_type: group
           admin_label: ''
@@ -78,10 +80,10 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: ''
+            image_style: medium
           group_column: ''
           group_columns: {  }
-          group_rows: true
+          group_rows: false
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -91,7 +93,7 @@ display:
           field_api_classes: false
         title:
           id: title
-          table: commerce_product_field_data
+          table: commerce_product_variation_field_data
           field: title
           relationship: none
           group_type: group
@@ -153,13 +155,15 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        body:
-          id: body
-          table: commerce_product__body
-          field: body
+        price__number:
+          id: price__number
+          table: commerce_product_variation_field_data
+          field: price__number
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: commerce_product_variation
+          entity_field: price
           plugin_id: field
           label: ''
           exclude: false
@@ -202,11 +206,12 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: text_trimmed
+          click_sort_column: number
+          type: commerce_price_default
           settings:
-            trim_length: 120
-          group_column: value
+            strip_trailing_zeroes: true
+            currency_display: symbol
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -216,64 +221,11 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        view_commerce_product:
-          id: view_commerce_product
-          table: commerce_product
-          field: view_commerce_product
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: commerce_product
-          plugin_id: entity_link
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: 'Take a look'
-          output_url_as_text: false
-          absolute: false
       pager:
         type: some
         options:
           offset: 0
-          items_per_page: 3
+          items_per_page: 12
       exposed_form:
         type: basic
         options:
@@ -291,36 +243,32 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts:
-        created:
-          id: created
-          table: commerce_product_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: commerce_product
-          entity_field: created
-          plugin_id: date
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
+      sorts: {  }
       arguments: {  }
       filters:
         status:
           id: status
-          table: commerce_product_field_data
+          table: commerce_product_variation_field_data
           field: status
-          entity_type: commerce_product
+          entity_type: commerce_product_variation
           entity_field: status
           plugin_id: boolean
           value: '1'
           group: 1
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_variation_field_data
+          field: type
+          entity_type: commerce_product_variation
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            sofa: sofa
+          expose:
             operator_limit_selection: false
             operator_list: {  }
       style:
@@ -345,8 +293,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
       tags:
-        - 'config:field.storage.commerce_product.body'
-        - 'config:field.storage.commerce_product.field_img_to_card'
+        - 'config:field.storage.commerce_product_variation.field_image'
   block_1:
     id: block_1
     display_title: Block
@@ -360,5 +307,4 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
       tags:
-        - 'config:field.storage.commerce_product.body'
-        - 'config:field.storage.commerce_product.field_img_to_card'
+        - 'config:field.storage.commerce_product_variation.field_image'

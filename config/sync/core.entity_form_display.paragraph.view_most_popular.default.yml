@@ -1,0 +1,26 @@
+uuid: 5c5021aa-e380-493a-9e03-48391d39de27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.view_most_popular.field_view_
+    - paragraphs.paragraphs_type.view_most_popular
+  module:
+    - block_field
+id: paragraph.view_most_popular.default
+targetEntityType: paragraph
+bundle: view_most_popular
+mode: default
+content:
+  field_view_:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

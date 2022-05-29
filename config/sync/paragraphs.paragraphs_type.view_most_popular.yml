@@ -1,0 +1,10 @@
+uuid: 4ef39fcd-690d-4361-8e53-16ea8f75aac1
+langcode: en
+status: true
+dependencies: {  }
+id: view_most_popular
+label: 'view most popular'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
