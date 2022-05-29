@@ -2,7 +2,7 @@
 
   Drupal.behaviors.blogRenderBehavior = {
     attach: function (context, settings) {
-      const cont = document.querySelectorAll('.views-row')
+      const cont = document.querySelectorAll('.views-row', context)
       $(function () {
         cont.forEach((el, i) => i % 2 == 0 ? el.classList.add('first-row') : el);
       })
@@ -25,11 +25,13 @@
   Drupal.behaviors.mostPopularSliderBehavior = {
     attach: function (context, settings) {
       $('.most-popular .view-content', context).slick({
+        // centerMode: true,
         slidesToShow: 4,
         slidesToScroll: 4,
+        centerMode: true,
         responsive: [
           {
-            breakpoint: 576,
+            breakpoint: 660,
             settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -37,7 +39,7 @@
             }
           },
           {
-            breakpoint: 860,
+            breakpoint: 892,
             settings: {
             slidesToShow: 2,
             slidesToScroll: 2,

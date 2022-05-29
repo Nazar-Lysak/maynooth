@@ -2,8 +2,8 @@
 
   Drupal.behaviors.burgerBehavior = {
     attach: function (context, settings) {
-      const burgerMenu = document.querySelector('.burger-menu');
-      const mainMenu = document.querySelector('.main-menu');
+      const burgerMenu = document.querySelector('.burger-menu', context);
+      const mainMenu = document.querySelector('.main-menu', context);
 
       burgerMenu.addEventListener('click', () => {
         burgerMenu.classList.toggle("active");
