@@ -55,9 +55,9 @@
 
                         img {
                             height: 215px;
+                            width: 100%;
                             max-width: 200px;
                             object-fit: cover;
-
                         }
                     }
 
@@ -75,7 +75,7 @@
                         font-size: 25px;
                         text-transform: capitalize;
                         text-align: center;
-                        color: #842C68;
+                        color: $violet;
                     }
                 }
             }

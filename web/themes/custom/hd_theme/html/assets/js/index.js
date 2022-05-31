@@ -28,14 +28,13 @@
         // centerMode: true,
         slidesToShow: 4,
         slidesToScroll: 4,
-        centerMode: true,
         responsive: [
           {
             breakpoint: 660,
             settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            focusOnSelect: true
+            // focusOnSelect: true
             }
           },
           {
@@ -43,7 +42,7 @@
             settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            focusOnSelect: true
+            // focusOnSelect: true
             }
           },
           {
@@ -51,7 +50,7 @@
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
-              focusOnSelect: true
+              // focusOnSelect: true
             }
           }
         ]

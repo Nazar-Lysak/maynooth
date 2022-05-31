@@ -1,10 +1,30 @@
-<div class="custom">
-    <div class="custom_header">
-        <h1>My first custom block</h1>
-    </div>
-    <div class="custom_content">
-        <h4>Created by: <span style="font-style:italic;font-weight:bold;">admin</span></h4>
-        <h4>Date: <span style="font-style:italic;font-weight:bold;">26.05.2022</span></h4>
-        <h4>Description: <span style="font-style:italic;font-weight:bold;">first block</span></h4>
-    </div>
-</div>
+<div class="wrapper-mortgage container">
+    <h2>
+        Mortgage calculator
+    </h2>
+    <form id="bank-form">
+        <div class="form__item">
+            <label for="bank">Chose a bank:<label>
+            <select name="banks" id="banks" form="bank-form">
+                <option value="bank_1">Bank 1</option>
+                <option value="bank_2">Bank 2</option>
+            </select>
+        </div>
+        <div class="form__item">
+            <label for="amount">Amount:<label>
+            <input type="number" id="amount" name="amount" min="1000" max="10000">
+        </div>
+        <div class="form__item">
+            <label for="advance">Advance:<label>
+            <input type="number" id="advance" name="advance" min="10" max="90">
+        </div>
+        <div class="form__item">
+            <label for="month"> Month:<label>
+            <input type="number" id="month" name="month" min="3" max="36">
+        </div>
+        <div class="form__item">
+            <label for="result"> Result:<label>
+            <p>result</p>
+        </div>
+    </form>
+<div>
