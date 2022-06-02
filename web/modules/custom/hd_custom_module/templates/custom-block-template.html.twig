@@ -1,30 +1,34 @@
-<div class="wrapper-mortgage container">
-    <h2>
-        Mortgage calculator
-    </h2>
-    <form id="bank-form">
-        <div class="form__item">
-            <label for="bank">Chose a bank:<label>
-            <select name="banks" id="banks" form="bank-form">
-                <option value="bank_1">Bank 1</option>
-                <option value="bank_2">Bank 2</option>
-            </select>
-        </div>
-        <div class="form__item">
-            <label for="amount">Amount:<label>
-            <input type="number" id="amount" name="amount" min="1000" max="10000">
-        </div>
-        <div class="form__item">
-            <label for="advance">Advance:<label>
-            <input type="number" id="advance" name="advance" min="10" max="90">
-        </div>
-        <div class="form__item">
-            <label for="month"> Month:<label>
-            <input type="number" id="month" name="month" min="3" max="36">
-        </div>
-        <div class="form__item">
-            <label for="result"> Result:<label>
-            <p>result</p>
-        </div>
-    </form>
-<div>
+<div class="custom-module-block container">
+  <h2>Credit calculator</h2>
+  <form id="custom-module-block-form">
+    <div class="form__items">
+      <div class="form__item">
+      <label for="bank">{{ 'Choose a bank:'|t }}</label>
+      <select name="bank" id="bank">
+
+        {% for bank in banks %}
+          <option value="{{ loop.index }}">{{ bank.name }}</option>
+        {% endfor %}
+    </select>
+    </div>
+      <div class="form__item">
+      <label for="amount">{{ 'Amount:'|t }}</label>
+      <input type="number" id="amount" name="amount" min="1000" max="10000" placeholder="1000 - 10000 $">
+    </div>
+      <div class="form__item">
+      <label for="advance">{{ 'Advance %:'|t }}</label>
+      <input type="number" id="advance" name="advance" min="10" max="90" placeholder="10 - 90%">
+    </div>
+      <div class="form__item">
+      <label for="months">{{ 'Months:'|t }}</label>
+      <input type="number" id="months" name="months" min="3" max="36" placeholder="3 - 36 months">
+    </div>
+    </div>
+    <div class="result">
+      <label for="result">{{ 'Result:'|t }}</label>
+      <div class="result-content">
+        <p> {{ 'Please fill in all fields'|t }} </p>
+      </div>
+    </div>
+  </form>
+</div>

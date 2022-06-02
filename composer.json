@@ -47,6 +47,8 @@
         "drupal/menus_attribute": "^1.2",
         "drupal/module_filter": "^3.2",
         "drupal/paragraphs": "^1.13",
+        "drupal/search_api": "^1.23",
+        "drupal/search_api_solr": "^4.2",
         "drupal/starrating": "^4.1@alpha",
         "drupal/themable_forms": "^1.0@beta",
         "drupal/twig_xdebug": "^1.2",

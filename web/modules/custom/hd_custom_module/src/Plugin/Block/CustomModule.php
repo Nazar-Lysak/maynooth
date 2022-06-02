@@ -15,10 +15,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class CustomModule extends BlockBase {
 
-  /**
-   * {@inheritdoc}
-   */
-  public function blockForm($form, FormStateInterface $form_state) {
+   public function blockForm($form, FormStateInterface $form_state) {
 
     $form = parent::blockForm($form, $form_state);
     $config = $this->getConfiguration();
@@ -92,15 +89,42 @@ class CustomModule extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $renderable = [
+    return  [
       '#theme' => 'custom_block_template',
       '#attached' => [
         'library' =>  [
           'hd_custom_module/hd-custom-module-styling',
           'hd_custom_module/hd-custom-module-scripts',
+        ],
+        'drupalSettings' => [
+          'hd_custom_module' => [
+            'banks' => [
+              1 => [
+                'name' => $this->configuration['bank_name_1'],
+                'percentage' => $this->configuration['bank_percentage_1'],
+                'months' => $this->configuration['bank_months_1'],
+              ],
+              2 => [
+                'name' => $this->configuration['bank_name_2'],
+                'percentage' => $this->configuration['bank_percentage_2'],
+                'months' => $this->configuration['bank_months_2'],
+              ]
+            ]
+          ]
         ]
       ],
+      '#banks' => [
+        0 => [
+          'name' => $this->configuration['bank_name_1'],
+          'percentage' => $this->configuration['bank_percentage_1'],
+          'months' => $this->configuration['bank_months_1'],
+        ],
+        1 => [
+          'name' => $this->configuration['bank_name_2'],
+          'percentage' => $this->configuration['bank_percentage_2'],
+          'months' => $this->configuration['bank_months_2'],
+        ]
+      ]
     ];
-    return $renderable;
   }
 }
