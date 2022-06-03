@@ -1,0 +1,34 @@
+.custom-module-block {
+  margin-bottom: 30px;
+}
+.custom-module-block h2 {
+  margin-bottom: 10px;
+}
+.custom-module-block #custom-module-block-form {
+  padding: 40px 10px;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
+  background-image: radial-gradient(gold, orange);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.custom-module-block #custom-module-block-form input {
+  width: 100%;
+  box-shadow: 0px 0px 10px 3px rgb(255, 0, 0);
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+.custom-module-block #custom-module-block-form .chacked {
+  border: solid 1px black;
+  box-shadow: none;
+}
+.custom-module-block #custom-module-block-form .form__items .form__item {
+  margin-bottom: 10px;
+}
+.custom-module-block #custom-module-block-form .result {
+  margin-bottom: 20px;
+}

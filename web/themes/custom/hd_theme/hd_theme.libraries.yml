@@ -11,6 +11,7 @@ global-scripts:
   version: 1.0
   js:
     html/src/js/index.js: {}
+    html/src/js/burger-menu.js: {}
   dependencies:
     - core/drupal
     - core/jquery
@@ -48,3 +49,8 @@ fancy-box:
   css:
     base:
       /libraries/fancybox/dist/fancybox.css: {}
+
+paragraph--main-banner:
+  css:
+    base:
+      html/src/css/main-banner.css: {}

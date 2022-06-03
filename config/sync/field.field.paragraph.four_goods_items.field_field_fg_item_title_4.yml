@@ -1,0 +1,19 @@
+uuid: eac91fc3-dd89-408e-bbaa-52e73d449314
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_field_fg_item_title_4
+    - paragraphs.paragraphs_type.four_goods_items
+id: paragraph.four_goods_items.field_field_fg_item_title_4
+field_name: field_field_fg_item_title_4
+entity_type: paragraph
+bundle: four_goods_items
+label: 'Title 4'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

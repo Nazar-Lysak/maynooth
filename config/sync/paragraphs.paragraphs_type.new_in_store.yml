@@ -1,0 +1,10 @@
+uuid: 775a13ac-f769-4107-907f-f9f041947878
+langcode: en
+status: true
+dependencies: {  }
+id: new_in_store
+label: 'New in Store (View)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,83 @@
+uuid: de5ba19a-2bb4-4452-a8dd-d8bc36ddc784
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.widget.features_component.field_description
+    - field.field.widget.features_component.field_image
+    - field.field.widget.features_component.field_link
+    - field.field.widget.features_component.field_short_title
+    - field.field.widget.features_component.field_text
+    - field.field.widget.features_component.field_title
+    - widget_engine.widget_type.features_component
+  module:
+    - image
+    - link
+    - user
+id: widget.features_component.default
+targetEntityType: widget
+bundle: features_component
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_short_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  name: true
+  widget_preview: true

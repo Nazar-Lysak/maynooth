@@ -1,4 +1,4 @@
-uuid: 744b4935-2a76-46a4-888d-2366149cb5c8
+uuid: 23f55f40-e75b-4928-8be3-f6b6abdfa91c
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: tabs
 theme: hd_theme
 region: content
-weight: -7
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:
@@ -23,4 +23,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /user/login
+    pages: "/user/login\r\n/user/register\r\n/user/password"

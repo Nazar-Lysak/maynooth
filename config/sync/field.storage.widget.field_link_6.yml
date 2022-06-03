@@ -1,0 +1,19 @@
+uuid: 1fe6ad96-c47b-4c60-9aec-a3489621a3e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - widget_engine
+id: widget.field_link_6
+field_name: field_link_6
+entity_type: widget
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

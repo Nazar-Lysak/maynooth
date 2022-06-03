@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 60px 0;
+    color: gold;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+        0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+        0 0 40px #A5F1FF;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://wallpapercave.com/wp/wp1961511.jpg");
+}
+
+.grid-list {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 25px;
+    grid-template-areas:
+        "one two three"
+        "four two five"
+        "four six seven";
+}
+
+.grid-list__item {
+    cursor: pointer;
+    transition: all ease .3s;
+    box-shadow: 0 0 3px 3px gold;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-list__item:hover {
+    transform: scale(1.03);
+}
+
+.item-one {
+    grid-area: one;
+    background-image: url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170505153954-lviv-architecture.jpg");
+}
+.item-two {
+    grid-area: two;
+    background-image: url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170505152809-opera-1667284-1920.jpg");
+}
+.item-three {
+    grid-area: three;
+    background-image: url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170424115136-kharkiv-railway-station-aleksandr-oslpov.jpg");
+}
+.item-four {
+    grid-area: four;
+    background-image: url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170424113752-ukraine-best-places-kamianets-podilskyi-fortress.jpg");
+}
+.item-five {
+    grid-area: five;
+    background-image: url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170505152440-lviv-1306387.jpg");
+}
+.item-six {
+    grid-area: six;
+    background-image: url("https://media.istockphoto.com/photos/flag-of-ukraine-picture-id489481939?k=20&m=489481939&s=612x612&w=0&h=SkdVhqdT6g-b2ZH9EOSToI99Qj8nldtCTOYRHQ-eOU4=");
+}
+.item-seven {
+    grid-area: seven;
+    background-image: url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170503181322-gettyimages-675714836.jpg");
+}

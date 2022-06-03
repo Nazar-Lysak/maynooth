@@ -1,0 +1,54 @@
+uuid: c427bf9e-5cf4-42ff-b668-beda9833f583
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_components
+    - node.type.blog
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.text_long_summary
+  module:
+    - entity_reference_revisions
+id: node.blog.field_blog_components
+field_name: field_blog_components
+entity_type: node
+bundle: blog
+label: 'Blog components'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_long_summary: text_long_summary
+      image: image
+    negate: 0
+    target_bundles_drag_drop:
+      four_goods_items:
+        weight: -15
+        enabled: false
+      image:
+        weight: -16
+        enabled: true
+      inspiration:
+        weight: -14
+        enabled: false
+      main_banner:
+        weight: -13
+        enabled: false
+      new_in_store:
+        weight: -12
+        enabled: false
+      product_tabs:
+        weight: -11
+        enabled: false
+      promo:
+        weight: -10
+        enabled: false
+      text_long_summary:
+        weight: -17
+        enabled: true
+field_type: entity_reference_revisions

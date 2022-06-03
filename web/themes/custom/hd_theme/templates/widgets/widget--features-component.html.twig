@@ -1,0 +1,32 @@
+<div{{ attributes.addClass('widget-features-component') }}>
+  {{ title_suffix }}
+  {% if content %}
+    <div class="wrapper">
+        <h2>
+            {{ content.field_title[0] }}
+        </h2>
+        <div class="wrapper-content">
+            <div class="wrapper-image">
+                {{ content.field_image }}
+            </div>
+            <div class="wrapper-description">
+                <h4>
+                    {{ content.field_short_title[0] }}
+                </h4>
+                <p>
+                    {{ content.field_description[0] }}
+                </p>
+
+                {% if content.field_text %}
+                <ul>
+                    {% for key, item in content.field_text if key|first != '#' %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {{ content.field_link }}
+            </div>
+        </div>
+    </div>
+  {% endif %}
+</div>

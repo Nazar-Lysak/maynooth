@@ -1,0 +1,19 @@
+uuid: 69a722df-7311-41eb-a083-a5ab5e4b5cff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_title
+    - paragraphs.paragraphs_type.404_banner
+id: paragraph.404_banner.field_main_title
+field_name: field_main_title
+entity_type: paragraph
+bundle: 404_banner
+label: 'Main title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

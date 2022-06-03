@@ -1,0 +1,21 @@
+uuid: 63ed1f3e-026f-4f52-ba40-6313728e4d6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - widget_engine
+id: widget.field_title_1
+field_name: field_title_1
+entity_type: widget
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

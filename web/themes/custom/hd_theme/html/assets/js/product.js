@@ -5,35 +5,19 @@
       });
       $('.product__images .slider-nav .product-slider').once().slick({
         asNavFor: '.product__images .slider-for .product-slider',
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         focusOnSelect: true,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 576,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            focusOnSelect: true
             }
-          },
-          // {
-          //   breakpoint: 600,
-          //   settings: {
-          //     slidesToShow: 2,
-          //     slidesToScroll: 2
-          //   }
-          // },
-          // {
-          //   breakpoint: 480,
-          //   settings: {
-          //     slidesToShow: 1,
-          //     slidesToScroll: 1
-          //   }
-          // }
+          }
         ]
-      });
-      Fancybox.bind(".slider-for .slick-slide img", {
-        // Your options go here
       });
     }
   };
@@ -49,4 +33,15 @@
       })
     }
   };
+
+  Drupal.behaviors.fancyBoxBehavior = {
+    attach: function (context, settings) {
+      $(function() {
+        Fancybox.bind(".slider-for .slick-slide img", {
+
+        });
+      })
+    }
+  };
+
 })(jQuery, Drupal, once);

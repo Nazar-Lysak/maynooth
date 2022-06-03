@@ -1,0 +1,33 @@
+uuid: 4e76a78d-f864-4dd8-a0fe-548d183f059d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.products_slider.field_main_title
+    - field.field.paragraph.products_slider.field_products_slider_item
+    - paragraphs.paragraphs_type.products_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.products_slider.default
+targetEntityType: paragraph
+bundle: products_slider
+mode: default
+content:
+  field_main_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_products_slider_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

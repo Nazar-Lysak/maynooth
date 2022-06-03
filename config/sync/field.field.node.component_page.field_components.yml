@@ -1,0 +1,91 @@
+uuid: 95765ece-cc76-4735-a5a9-865e277f6833
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.component_page
+    - paragraphs.paragraphs_type.404_banner
+    - paragraphs.paragraphs_type.additional_banner_one
+    - paragraphs.paragraphs_type.double_signpost
+    - paragraphs.paragraphs_type.four_goods_items
+    - paragraphs.paragraphs_type.main_banner
+    - paragraphs.paragraphs_type.new_in_store
+    - paragraphs.paragraphs_type.products_slider
+    - paragraphs.paragraphs_type.promo
+    - paragraphs.paragraphs_type.simple_slider
+    - paragraphs.paragraphs_type.view_most_popular
+  module:
+    - entity_reference_revisions
+id: node.component_page.field_components
+field_name: field_components
+entity_type: node
+bundle: component_page
+label: components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      four_goods_items: four_goods_items
+      main_banner: main_banner
+      promo: promo
+      new_in_store: new_in_store
+      additional_banner_one: additional_banner_one
+      simple_slider: simple_slider
+      double_signpost: double_signpost
+      404_banner: 404_banner
+      products_slider: products_slider
+      view_most_popular: view_most_popular
+    negate: 0
+    target_bundles_drag_drop:
+      404_banner:
+        weight: -24
+        enabled: true
+      additional_banner_one:
+        weight: -27
+        enabled: true
+      double_signpost:
+        weight: -25
+        enabled: true
+      four_goods_items:
+        weight: -31
+        enabled: true
+      image:
+        weight: -19
+        enabled: false
+      inspiration:
+        weight: -20
+        enabled: false
+      main_banner:
+        weight: -30
+        enabled: true
+      new_in_store:
+        weight: -28
+        enabled: true
+      product_tabs:
+        weight: -21
+        enabled: false
+      products_slider:
+        weight: -23
+        enabled: true
+      promo:
+        weight: -29
+        enabled: true
+      simple_slider:
+        weight: -26
+        enabled: true
+      simple_slider_item_:
+        weight: -17
+        enabled: false
+      text_long_summary:
+        weight: -18
+        enabled: false
+      view_most_popular:
+        weight: -22
+        enabled: true
+field_type: entity_reference_revisions

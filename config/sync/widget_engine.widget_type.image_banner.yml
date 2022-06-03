@@ -3,4 +3,4 @@ langcode: en
 status: true
 dependencies: {  }
 id: image_banner
-label: 'Image banner'
+label: 'widget - Image banner'

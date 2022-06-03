@@ -1,0 +1,19 @@
+uuid: 9b04c410-8c26-4514-9d18-df7dc1774a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.widget.field_title_6
+    - widget_engine.widget_type.six_goods_items
+id: widget.six_goods_items.field_title_6
+field_name: field_title_6
+entity_type: widget
+bundle: six_goods_items
+label: 'Title 6'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

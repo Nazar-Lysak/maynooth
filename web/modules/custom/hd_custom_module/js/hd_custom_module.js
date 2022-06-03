@@ -1,67 +1,80 @@
 (function ($, Drupal, once) {
-  Drupal.behaviors.customModuleBlockBehavior = {
-    attach: function (context, settings) {
-      let banks = settings.hd_custom_module.banks;
-      $( "#custom-module-block-form", context ).on('change', function() {
-        let bank = $( "#bank", context ).val();
-        let amount = +$( "#amount", context ).val();
-        let advance = +$( "#advance", context ).val();
-        let months = +$( "#months", context ).val();
-        if (months <= getBank (bank).months) {
-          let sum = amount - ((amount/ 100) * advance);
-          let result = (sum + ((sum/100) * getBank (bank).percentage)) / months;
-          console.log(result);
-          $('.result-content').html('<p>' + result + '</p>');
-        }
-        else {
-          let sum = amount - ((amount/ 100) * advance);
-          let result = (sum + ((sum/100) * 3.5)) / months;
-          console.log(result);
-          $('.result-content').html('<p>' + result + '</p>');
-        }
-        checkAmount ();
-        checkAdvance ();
-        checkMonths ();
-      });
+    Drupal.behaviors.customModuleBlockBehavior = {
+      attach: function (context, settings) {
 
-      function checkAmount () {
-        $( "#amount", context ).focus( function () {
-          $( "#amount", context ).removeClass('error');
-        });
-        $( "#amount", context ).focusout( function () {
-          let val = $( "#amount", context ).val();
-          if (val < 1000 || val > 10000) {
-            $( "#amount", context ).addClass('error');
-          }
-        });
-      }
-      function checkAdvance () {
-        $( "#advance", context ).focus( function () {
-          $( "#advance", context ).removeClass('error');
-        });
-        $( "#advance", context ).focusout( function () {
-          let val = $( "#advance", context ).val();
-          if (val < 10 || val > 90) {
-            $( "#advance", context ).addClass('error');
-          }
-        });
-      }
-      function checkMonths () {
-        $( "#months", context ).focus( function () {
-          $( "#months", context ).removeClass('error');
-        });
-        $( "#months", context ).focusout( function () {
-          let val = $( "#months", context ).val();
-          if (val < 3 || val > 36) {
-            $( "#months", context ).addClass('error');
-          }
-        });
-      }
+        const bank = document.querySelector('#bank', context);
+        const amount = document.querySelector('#amount', context);
+        const advance = document.querySelector('#advance', context);
+        const months = document.querySelector('#months', context);
 
-      function getBank (id) {
-        let val = banks[id];
-        return val;
+        const banks = settings.hd_custom_module.banks;
+        const out = document.querySelector('.result-content', context);
+
+        let bankVal = banks[1],
+            amountVal = 0,
+            advanceVal = 0,
+            monthVal = 0;
+
+            out.innerHTML = `<h4>Full sum: --- $</h4>
+          <h4>Pay per month:  --- $</h4>`;
+
+        const checkInputFields = (sum, pers, m) => {
+          sum  < 1000 || sum  > 10000
+          ? amount.classList.remove("chacked")
+          : amount.classList.add("chacked");
+
+          pers < 10 || pers > 90
+          ? advance.classList.remove("chacked")
+          : advance.classList.add("chacked");
+
+          m < 3 || m > 36
+          ? months.classList.remove("chacked")
+          : months.classList.add("chacked");
+        }
+
+        [bank, amount, advance, months].forEach(el => {
+          el.oninput = e => {
+            e.target.id == 'bank'    ? bankVal    = banks[+e.target.value] :
+            e.target.id == 'amount'  ? amountVal  = +e.target.value :
+            e.target.id == 'advance' ? advanceVal = +e.target.value :
+            e.target.id == 'months'  ? monthVal   = +e.target.value :
+            NULL;
+            restValues(bankVal, amountVal, advanceVal, monthVal);
+          }
+        })
+
+        const restValues = (bankParam, amountParam, advanceParam, monthParam) => {
+          checkInputFields(amountParam, advanceParam, monthParam);
+
+          let count = 0;
+          [amount, advance, months].forEach(el => !!el.className ? count = count + 1 : count--);
+
+        if (count < 3) {
+          out.innerHTML = `
+          <h4>Full sum: --- $</h4>
+          <h4>Pay per month:  --- $</h4>
+            `
+        } else if(advanceParam < 50 && count === 3) {
+            const sumToPay = amountParam * (1 - advanceParam / 100);
+            const fullPay = sumToPay * (1 + bankParam.percentage / 100);
+            const monthlyPay = fullPay / monthParam;
+            out.innerHTML = `
+              <h4>Full sum: ${fullPay.toFixed(2)}</h4>
+              <h4>Pay per month: ${monthlyPay.toFixed(2)}</h4>
+            `
+          } else if(advanceParam >= 50 && count === 3) {
+            const sumToPay = amountParam * (1 - advanceParam / 100);
+            const fullPay = sumToPay * (1 + 0.5 / 100);
+            const monthlyPay = fullPay / monthParam;
+            out.innerHTML = `
+              <h4>Full sum: ${fullPay.toFixed(2)}</h4>
+              <h4>Pay per month: ${monthlyPay.toFixed(2)}</h4>
+            `
+          }
+        }
       }
-    }
-  };
+    };
+
+
 })(jQuery, Drupal, once);
+

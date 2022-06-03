@@ -1,0 +1,26 @@
+uuid: 691e5322-e7a2-407b-9277-cca2de4215b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - hd_custom_module
+  theme:
+    - hd_theme
+id: hdcustommoduleblock
+theme: hd_theme
+region: content
+weight: 0
+provider: null
+plugin: hd_custom_module_block
+settings:
+  id: hd_custom_module_block
+  label: 'HD custom module block'
+  label_display: '0'
+  provider: hd_custom_module
+  bank_name_1: 'Bank One'
+  bank_percentage_1: '6'
+  bank_months_1: '12'
+  bank_name_2: 'Bank Two'
+  bank_percentage_2: '8'
+  bank_months_2: '24'
+visibility: {  }

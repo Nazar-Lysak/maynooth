@@ -6,9 +6,9 @@ name: 'Hello Drupal'
 mail: email@email.com
 slogan: ''
 page:
-  403: ''
-  404: ''
-  front: /node/3
+  403: /node/23
+  404: /node/22
+  front: /node/4
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

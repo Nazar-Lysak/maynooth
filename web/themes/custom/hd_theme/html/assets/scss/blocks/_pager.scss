@@ -1,0 +1,52 @@
+.pager {
+    border-radius: 10px;
+        padding: 30px 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: $brown;
+        background-image: linear-gradient($brown, $gray);
+        display: flex;
+        justify-content: center;
+
+    .pager__items {
+        display: flex;
+
+        .pager__item {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: $brown;
+            background-image: linear-gradient($brown, $gray);
+            margin: 0 10px;
+            border-radius: 5px;
+            height: 40px;
+            width: 40px;
+            display: table;
+
+            a {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+
+        .is-active {
+            background-image: linear-gradient($info, $gold);
+            transform: scale(1.2);
+
+            a {
+                color: $dark;
+            }
+        }
+
+        .pager__item--last,
+        .pager__item--first {
+            display: none;
+        }
+
+        .pager__item--previous,
+        .pager__item--next {
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

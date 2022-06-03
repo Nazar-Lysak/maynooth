@@ -5,6 +5,8 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
+/web/libraries/
+/node_modules/
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
@@ -18,5 +20,5 @@
 
 # Ignore .env files as they are personal
 /.env
-*.DS_Store
+/*.DS_Store
 

@@ -1,0 +1,47 @@
+uuid: ea352eec-ae2b-43fa-af8c-6fbe2a4f5a82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.additional_banner_one.field_main_image
+    - field.field.paragraph.additional_banner_one.field_main_title
+    - field.field.paragraph.additional_banner_one.field_text_summary
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.additional_banner_one
+  module:
+    - image
+    - text
+id: paragraph.additional_banner_one.default
+targetEntityType: paragraph
+bundle: additional_banner_one
+mode: default
+content:
+  field_main_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_main_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_summary:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

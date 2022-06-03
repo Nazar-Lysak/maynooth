@@ -1,0 +1,6 @@
+uuid: 09b186ba-b50f-4923-86ec-404b6c3d3421
+langcode: en
+status: true
+dependencies: {  }
+id: six_goods_items
+label: 'widget - six goods items'

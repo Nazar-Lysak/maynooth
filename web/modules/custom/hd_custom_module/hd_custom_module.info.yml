@@ -1,6 +1,8 @@
-name: HD Custom module
-description: My first module
-package: HD - custom
+name: HD custom module
+description: First custom module "Hello Drupal".
+package: Custom modules
+dependencies:
+  - paragraphs
 
 type: module
 core_version_requirement: ^8.8 || ^9

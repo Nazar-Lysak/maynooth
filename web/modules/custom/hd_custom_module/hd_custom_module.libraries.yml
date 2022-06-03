@@ -12,4 +12,3 @@ hd-custom-module-scripts:
     - core/drupal
     - core/jquery
     - core/once
-

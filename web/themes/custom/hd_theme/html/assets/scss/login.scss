@@ -1,11 +1,89 @@
+@import './additional_styles/varibles';
+@import './additional_styles/UI/buttons/button-login-page';
+
 body {
+  background-image: $login-page;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   .region-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    #user-login-form {
+    padding: 20px;
 
+    #user-login-form {
+      max-width: 450px;
+      border-radius: 5px;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(3px);
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 40px 30px;
+      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+      .js-form-item-name {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        label {
+          height: 30px;
+          display: flex;
+          align-items: center;
+          color: $dark;
+        }
+
+        input {
+          height: 30px;
+          width: 100%;
+          padding-left: 10px;
+          margin-left: 10px;
+          border-radius: 10px;
+          background-color: $brown;
+          color: $dark;
+          letter-spacing: 0.8px;
+        }
+      }
+
+      .form-type-password {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        label {
+          height: 30px;
+          display: flex;
+          align-items: center;
+          color: $dark;
+        }
+
+        input {
+          height: 30px;
+          width: 100%;
+          padding-left: 10px;
+          margin-left: 10px;
+          border-radius: 10px;
+          background-color: $brown;
+          color: $dark;
+          letter-spacing: 0.8px;
+        }
+      }
+
+      .form-actions {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }
+
+
+
+

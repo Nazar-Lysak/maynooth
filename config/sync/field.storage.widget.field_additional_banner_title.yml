@@ -1,0 +1,21 @@
+uuid: d2b11c7b-bdf8-40a9-9fe6-dbc31c3f1fe7
+langcode: en
+status: true
+dependencies:
+  module:
+    - widget_engine
+id: widget.field_additional_banner_title
+field_name: field_additional_banner_title
+entity_type: widget
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

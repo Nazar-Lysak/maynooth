@@ -1,0 +1,26 @@
+uuid: 969c7567-9434-4b88-b848-1a0b339fa70e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.new_in_store.field_new_in_store
+    - paragraphs.paragraphs_type.new_in_store
+  module:
+    - block_field
+id: paragraph.new_in_store.default
+targetEntityType: paragraph
+bundle: new_in_store
+mode: default
+content:
+  field_new_in_store:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

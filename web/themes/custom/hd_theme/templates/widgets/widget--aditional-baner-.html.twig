@@ -1,0 +1,14 @@
+<div{{ attributes.addClass('widget-additional-banner') }}>
+  {{ title_suffix }}
+  {% if content %}
+    <div class="wrapper">
+        {{ content.field_image }}
+        <p>
+            {{ content.field_text[0] }}
+        </p>
+    </div>
+    <h2>
+        {{ content.field_additional_banner_title[0] }}
+    </h2>
+  {% endif %}
+</div>

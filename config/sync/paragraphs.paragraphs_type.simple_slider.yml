@@ -1,0 +1,10 @@
+uuid: a015e06d-30df-45ce-97c7-6f34255cd42f
+langcode: en
+status: true
+dependencies: {  }
+id: simple_slider
+label: 'Simple slider'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

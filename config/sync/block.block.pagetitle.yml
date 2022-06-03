@@ -1,4 +1,4 @@
-uuid: 367dd322-9195-4e5f-9b89-0fdade45e241
+uuid: ebfe9f00-cae2-4000-8dbd-cd429300008a
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: pagetitle
 theme: hd_theme
 region: content
-weight: -8
+weight: -6
 provider: null
 plugin: page_title_block
 settings:
@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /user/login
+    pages: "/user/login\r\n/user/register\r\n/user/password"

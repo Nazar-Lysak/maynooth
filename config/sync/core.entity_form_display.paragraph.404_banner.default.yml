@@ -1,0 +1,57 @@
+uuid: fdf35134-a3ca-442c-a228-0ebcb788c940
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.404_banner.field_block_desc_1
+    - field.field.paragraph.404_banner.field_image
+    - field.field.paragraph.404_banner.field_link
+    - field.field.paragraph.404_banner.field_main_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.404_banner
+  module:
+    - image
+    - link
+    - text
+id: paragraph.404_banner.default
+targetEntityType: paragraph
+bundle: 404_banner
+mode: default
+content:
+  field_block_desc_1:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_main_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,77 @@
+.cart-form {
+    max-width: $breakpoint-md;
+    margin: 10px auto;
+    padding: 40px 10px;
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
+    background-image: radial-gradient($gold, $orange);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    text-align: center;
+
+    .views-table {
+        margin: 0 auto;
+    }
+
+    .field--name-field-image {
+        img {
+            height: 60px;
+            width: 100px;
+            margin: 5px;
+        }
+    }
+
+    .field--name-field-image > img:not(:first-of-type) {
+        display: none;
+    }
+
+    th,
+    td {
+        border: solid 1px black;
+        text-align: center;
+        padding: 5px 10px;
+
+        a {
+            font-weight: 700;
+        }
+
+        .delete-order-item {
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            overflow: hidden;
+            -webkit-transition: all ease .5s;
+            transition: all ease .5s;
+            background-color: $violet;
+            color: $white;
+            font-size: 16px;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+            box-shadow: 0px 4px 4px 0px #00000040;
+
+            &:hover {
+                background-color: darken($color: $violet, $amount: 7%);
+            }
+        }
+    }
+
+    .field--name-title,
+    .field--name-price {
+        padding: 10px 0;
+    }
+
+    .field--name-product-id {
+        padding-bottom: 10px;
+    }
+
+    .field--name-total-price {
+        padding: 10px 0;
+    }
+
+    .quantity-edit-input {
+        width: 35px;
+        height: 20px;
+        text-align: center;
+    }
+}

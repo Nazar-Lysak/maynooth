@@ -1,0 +1,153 @@
+footer {
+  background-color: $dark;
+  .footer {
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 1fr 1fr 75px;
+    grid-template-areas: "menu-left branding  menu-right"
+                         "menu-social menu-social menu-social"
+                         "privacy privacy privacy";
+
+    .menu--footer-menu-left {
+      grid-area: menu-left;
+      align-self: end;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .block-system-branding-block {
+      grid-area: branding;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      align-self: end;
+    }
+    .menu--footer-menu-right {
+      grid-area: menu-right;
+      align-self: end;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .menu--social {
+      grid-area: menu-social;
+      grid-column-start: 1;
+      ul.menu {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-top: solid 1px $white;
+        padding-top: 20px;
+        margin-top: 50px;
+        .menu {
+          margin: 0 auto;
+        }
+        .menu-item a {
+          font-size: 23px;
+          width: 40px;
+          margin: 12.5px;
+          border-radius: 50%;
+          background-color: $white;
+          color: $dark;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 7px;
+          text-decoration: none;
+
+          &:hover {
+            color: $white;
+            background-color: $dark;
+            transition: all ease .5s;
+          }
+        }
+
+        .icon-instagram:hover {
+          transition: all .5s ease-in-out;
+          @include instagram;
+        }
+        .icon-facebook:hover {
+          transition: all .5s ease-in-out;
+          @include facebook;
+        }
+
+        .icon-tiktok:hover {
+          transition: all .5s ease-in-out;
+          @include tik-tok;
+        }
+        .icon-twitter:hover {
+          transition: all .5s ease-in-out;
+          @include twitter;
+        }
+      }
+    }
+
+    &__privacy {
+      grid-area: privacy;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0;
+      text-align: center;
+      color: $white;
+      div {
+        margin: 0 8px;
+      }
+      a {
+        color: $white;
+        transition: all ease .3s;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      .menu-item a {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0;
+        text-align: left;
+        color: $white;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: $breakpoint-lg) {
+  footer {
+    .footer {
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px 60px 110px 100px;
+      grid-template-areas: "branding branding"
+                           "menu-left menu-right"
+                           "menu-social menu-social"
+                           "privacy privacy";
+      .navigation {
+        .menu {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .up-to-top {
+    display: none;
+  }
+}
+

@@ -1,0 +1,49 @@
+.widget_six-goods-items {
+    width: 100%;
+    margin-bottom: 50px;
+
+    .wrapper {
+        padding: 0 20px;
+        margin: 0 auto;
+        max-width: $breakpoint-max;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 52px;
+
+        .wraper-item {
+            h3 {
+                background-color: $gray;
+                padding: 30px 0;
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                color: $dark;
+            }
+
+            .field--type-image {
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    .widget_six-goods-items {
+        .wrapper {
+            grid-template-columns: 1fr;
+            gap: 52px;
+
+            .wraper-item {
+                &::after {
+                    background: none;
+                }
+            }
+        }
+    }
+}
