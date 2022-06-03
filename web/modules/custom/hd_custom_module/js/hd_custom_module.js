@@ -45,6 +45,7 @@
 
         const restValues = (bankParam, amountParam, advanceParam, monthParam) => {
           checkInputFields(amountParam, advanceParam, monthParam);
+
           let count = 0;
           [amount, advance, months].forEach(el => !!el.className ? count = count + 1 : count--);
 

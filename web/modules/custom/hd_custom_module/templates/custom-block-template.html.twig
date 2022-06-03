@@ -1,11 +1,10 @@
 <div class="custom-module-block container">
-  <h2>Credit calculator</h2>
+  <h2>Loan Calculator</h2>
   <form id="custom-module-block-form">
     <div class="form__items">
       <div class="form__item">
       <label for="bank">{{ 'Choose a bank:'|t }}</label>
       <select name="bank" id="bank">
-
         {% for bank in banks %}
           <option value="{{ loop.index }}">{{ bank.name }}</option>
         {% endfor %}
@@ -25,9 +24,7 @@
     </div>
     </div>
     <div class="result">
-      <label for="result">{{ 'Result:'|t }}</label>
       <div class="result-content">
-        <p> {{ 'Please fill in all fields'|t }} </p>
       </div>
     </div>
   </form>
